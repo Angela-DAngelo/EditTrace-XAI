@@ -1,0 +1,8 @@
+IMAGE_ROOT=/home/dange/EditTrace/data/imagenet
+DEVICE=cpu
+EVAL_DIR=artifacts/evaluation/development
+
+Image directories:
+1000
+Image files:
+50000

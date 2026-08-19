@@ -1,0 +1,8 @@
+Python: 3.11.15 (main, Aug  1 2026, 15:35:11) [GCC 11.4.0]
+Python executable: /home/dange/EditTrace/edittrace-xai_v0.2/.venv/bin/python
+EditTrace-XAI: 0.3.0
+Torch: 2.13.0+cu130
+TorchVision: 0.28.0+cu130
+CUDA available: False
+scikit-image: 0.26.0
+LPIPS import: OK

@@ -1,0 +1,9 @@
+{
+  "output_dir": "/home/dange/EditTrace/edittrace-xai_v0.3/artifacts/evaluation/test/paper_tables",
+  "tables": [
+    "RQ1",
+    "RQ2",
+    "RQ3",
+    "RQ4"
+  ]
+}

@@ -1,0 +1,188 @@
+/home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages/torchvision/models/_utils.py:207: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages/torchvision/models/_utils.py:222: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Downloading: "https://download.pytorch.org/models/alexnet-owt-7be5be79.pth" to /home/dange/.cache/torch/hub/checkpoints/alexnet-owt-7be5be79.pth
+  0%|          | 0.00/233M [00:00<?, ?B/s]  1%|▏         | 3.12M/233M [00:00<00:07, 32.1MB/s]  3%|▎         | 6.88M/233M [00:00<00:06, 36.3MB/s]  4%|▍         | 10.4M/233M [00:00<00:06, 36.2MB/s]  6%|▌         | 13.9M/233M [00:00<00:07, 29.9MB/s]  7%|▋         | 16.9M/233M [00:00<00:08, 27.5MB/s]  8%|▊         | 19.6M/233M [00:00<00:08, 26.2MB/s] 10%|▉         | 22.2M/233M [00:00<00:08, 25.4MB/s] 11%|█         | 24.8M/233M [00:00<00:08, 24.9MB/s] 12%|█▏        | 27.2M/233M [00:01<00:08, 24.5MB/s] 13%|█▎        | 29.6M/233M [00:01<00:08, 24.3MB/s] 14%|█▎        | 32.0M/233M [00:01<00:08, 24.1MB/s] 15%|█▍        | 34.4M/233M [00:01<00:08, 23.9MB/s] 16%|█▌        | 36.8M/233M [00:01<00:08, 23.8MB/s] 17%|█▋        | 39.1M/233M [00:01<00:08, 23.8MB/s] 18%|█▊        | 41.5M/233M [00:01<00:08, 23.7MB/s] 19%|█▉        | 43.9M/233M [00:01<00:08, 23.7MB/s] 20%|█▉        | 46.2M/233M [00:01<00:08, 23.7MB/s] 21%|██        | 48.6M/233M [00:02<00:08, 23.7MB/s] 22%|██▏       | 51.0M/233M [00:02<00:08, 23.6MB/s] 23%|██▎       | 53.4M/233M [00:02<00:07, 23.6MB/s] 24%|██▍       | 55.8M/233M [00:02<00:07, 23.6MB/s] 25%|██▍       | 58.1M/233M [00:02<00:07, 23.7MB/s] 26%|██▌       | 60.5M/233M [00:02<00:07, 23.6MB/s] 27%|██▋       | 62.9M/233M [00:02<00:07, 23.6MB/s] 28%|██▊       | 65.2M/233M [00:02<00:07, 23.6MB/s] 29%|██▉       | 67.6M/233M [00:02<00:07, 23.6MB/s] 30%|███       | 70.0M/233M [00:02<00:07, 23.6MB/s] 31%|███       | 72.4M/233M [00:03<00:07, 23.6MB/s] 32%|███▏      | 74.8M/233M [00:03<00:07, 23.6MB/s] 33%|███▎      | 77.1M/233M [00:03<00:06, 23.6MB/s] 34%|███▍      | 79.5M/233M [00:03<00:06, 23.6MB/s] 35%|███▌      | 81.9M/233M [00:03<00:06, 23.6MB/s] 36%|███▌      | 84.2M/233M [00:03<00:06, 23.6MB/s] 37%|███▋      | 86.6M/233M [00:03<00:06, 23.6MB/s] 38%|███▊      | 89.0M/233M [00:03<00:06, 23.6MB/s] 39%|███▉      | 91.4M/233M [00:03<00:06, 23.6MB/s] 40%|████      | 93.8M/233M [00:04<00:06, 23.6MB/s] 41%|████      | 96.1M/233M [00:04<00:06, 23.6MB/s] 42%|████▏     | 98.5M/233M [00:04<00:05, 23.6MB/s] 43%|████▎     | 101M/233M [00:04<00:05, 23.6MB/s]  44%|████▍     | 103M/233M [00:04<00:05, 23.6MB/s] 45%|████▌     | 106M/233M [00:04<00:05, 23.6MB/s] 46%|████▋     | 108M/233M [00:04<00:05, 23.7MB/s] 47%|████▋     | 110M/233M [00:04<00:05, 23.6MB/s] 48%|████▊     | 113M/233M [00:04<00:05, 23.6MB/s] 49%|████▉     | 115M/233M [00:04<00:05, 23.6MB/s] 50%|█████     | 118M/233M [00:05<00:05, 23.6MB/s] 51%|█████▏    | 120M/233M [00:05<00:05, 23.6MB/s] 52%|█████▏    | 122M/233M [00:05<00:04, 23.6MB/s] 53%|█████▎    | 125M/233M [00:05<00:04, 23.6MB/s] 54%|█████▍    | 127M/233M [00:05<00:04, 23.6MB/s] 56%|█████▌    | 129M/233M [00:05<00:04, 23.6MB/s] 57%|█████▋    | 132M/233M [00:05<00:04, 23.6MB/s] 58%|█████▊    | 134M/233M [00:05<00:04, 23.6MB/s] 59%|█████▊    | 136M/233M [00:05<00:04, 23.6MB/s] 60%|█████▉    | 139M/233M [00:06<00:04, 23.6MB/s] 61%|██████    | 141M/233M [00:06<00:04, 23.6MB/s] 62%|██████▏   | 144M/233M [00:06<00:03, 23.6MB/s] 63%|██████▎   | 146M/233M [00:06<00:03, 23.6MB/s] 64%|██████▎   | 148M/233M [00:06<00:03, 23.6MB/s] 65%|██████▍   | 151M/233M [00:06<00:03, 23.6MB/s] 66%|██████▌   | 153M/233M [00:06<00:03, 23.6MB/s] 67%|██████▋   | 156M/233M [00:06<00:03, 23.6MB/s] 68%|██████▊   | 158M/233M [00:06<00:03, 23.6MB/s] 69%|██████▉   | 160M/233M [00:06<00:03, 23.6MB/s] 70%|██████▉   | 163M/233M [00:07<00:03, 23.6MB/s] 71%|███████   | 165M/233M [00:07<00:03, 23.6MB/s] 72%|███████▏  | 167M/233M [00:07<00:02, 23.6MB/s] 73%|███████▎  | 170M/233M [00:07<00:02, 23.6MB/s] 74%|███████▍  | 172M/233M [00:07<00:02, 23.6MB/s] 75%|███████▍  | 174M/233M [00:07<00:02, 23.6MB/s] 76%|███████▌  | 177M/233M [00:07<00:02, 23.6MB/s] 77%|███████▋  | 179M/233M [00:07<00:02, 23.6MB/s] 78%|███████▊  | 182M/233M [00:07<00:02, 23.6MB/s] 79%|███████▉  | 184M/233M [00:08<00:02, 23.6MB/s] 80%|███████▉  | 186M/233M [00:08<00:02, 23.6MB/s] 81%|████████  | 189M/233M [00:08<00:01, 23.6MB/s] 82%|████████▏ | 191M/233M [00:08<00:01, 23.6MB/s] 83%|████████▎ | 194M/233M [00:08<00:01, 23.6MB/s] 84%|████████▍ | 196M/233M [00:08<00:01, 23.6MB/s] 85%|████████▌ | 198M/233M [00:08<00:01, 23.6MB/s] 86%|████████▌ | 201M/233M [00:08<00:01, 23.6MB/s] 87%|████████▋ | 203M/233M [00:08<00:01, 23.6MB/s] 88%|████████▊ | 205M/233M [00:08<00:01, 23.6MB/s] 89%|████████▉ | 208M/233M [00:09<00:01, 23.6MB/s] 90%|█████████ | 210M/233M [00:09<00:01, 23.6MB/s] 91%|█████████ | 212M/233M [00:09<00:00, 23.6MB/s] 92%|█████████▏| 215M/233M [00:09<00:00, 23.6MB/s] 93%|█████████▎| 217M/233M [00:09<00:00, 23.6MB/s] 94%|█████████▍| 220M/233M [00:09<00:00, 23.6MB/s] 95%|█████████▌| 222M/233M [00:09<00:00, 23.6MB/s] 96%|█████████▋| 224M/233M [00:09<00:00, 23.6MB/s] 97%|█████████▋| 227M/233M [00:09<00:00, 23.6MB/s] 98%|█████████▊| 229M/233M [00:10<00:00, 23.6MB/s] 99%|█████████▉| 232M/233M [00:10<00:00, 23.6MB/s]100%|██████████| 233M/233M [00:10<00:00, 24.0MB/s]
+Loading model from: /home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages/lpips/weights/v0.1/alex.pth
+{
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 20260802,
+  "config": "/home/dange/EditTrace/edittrace-xai_v0.3/configs/development.yaml",
+  "config_sha256": "43de78ab8234a8bbc2c9cdc2cd17d3ff3fce271363afcaca66fca3c30333cafa",
+  "errors": [],
+  "exhaustive_verification": false,
+  "input": "/home/dange/EditTrace/edittrace-xai_v0.3/artifacts/traces/resnet50_b_natural_dev.jsonl",
+  "input_sha256": "796e6c5704d9a17af722cf88c5c00afc47e4dc39ebe8357f45385c20b3e2d416",
+  "input_traces": 500,
+  "model": "torchvision:resnet50:IMAGENET1K_V2",
+  "oracle_limit": null,
+  "perceptual_metric": "lpips",
+  "results": {
+    "constrained_repair": {
+      "action_count": {
+        "available": true,
+        "ci95_high": 1.1265822784810127,
+        "ci95_low": 1.0126582278481013,
+        "estimate": 1.0632911392405062,
+        "n_clusters": 79,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "mean_latency_ms": 915.1605498518518,
+      "normalized_parameter_movement": {
+        "available": true,
+        "ci95_high": 1.0924050632911393,
+        "ci95_low": 0.9658227848101265,
+        "estimate": 1.0265822784810126,
+        "n_clusters": 79,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "oracle_cost_regret": {
+        "available": false,
+        "n_clusters": 0
+      },
+      "perceptual_distance": {
+        "available": true,
+        "ci95_high": 0.3613696672174125,
+        "ci95_low": 0.250149498965379,
+        "estimate": 0.3052000048145935,
+        "n_clusters": 79,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "ssim": {
+        "available": true,
+        "ci95_high": 0.7811339793049941,
+        "ci95_low": 0.6665831063428983,
+        "estimate": 0.7249294167420613,
+        "n_clusters": 79,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "success": {
+        "available": true,
+        "ci95_high": 1.0,
+        "ci95_low": 0.9382716049382716,
+        "estimate": 0.9753086419753086,
+        "n_clusters": 81,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "total_model_calls": 1826
+    },
+    "last_action_rollback": {
+      "action_count": {
+        "available": true,
+        "ci95_high": 1.0,
+        "ci95_low": 1.0,
+        "estimate": 1.0,
+        "n_clusters": 81,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "mean_latency_ms": 36.518521740740745,
+      "normalized_parameter_movement": {
+        "available": true,
+        "ci95_high": 1.0,
+        "ci95_low": 1.0,
+        "estimate": 1.0,
+        "n_clusters": 81,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "oracle_cost_regret": {
+        "available": false,
+        "n_clusters": 0
+      },
+      "perceptual_distance": {
+        "available": true,
+        "ci95_high": 0.42321142491325736,
+        "ci95_low": 0.22532900275476278,
+        "estimate": 0.32515436463057995,
+        "n_clusters": 25,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "ssim": {
+        "available": true,
+        "ci95_high": 0.8247694082648335,
+        "ci95_low": 0.6052332163537908,
+        "estimate": 0.7182316778008975,
+        "n_clusters": 25,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "success": {
+        "available": true,
+        "ci95_high": 0.4074074074074074,
+        "ci95_low": 0.20987654320987653,
+        "estimate": 0.30864197530864196,
+        "n_clusters": 81,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "total_model_calls": 81
+    },
+    "max_magnitude_rollback": {
+      "action_count": {
+        "available": true,
+        "ci95_high": 1.0,
+        "ci95_low": 1.0,
+        "estimate": 1.0,
+        "n_clusters": 81,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "mean_latency_ms": 36.82215487654321,
+      "normalized_parameter_movement": {
+        "available": true,
+        "ci95_high": 1.0,
+        "ci95_low": 1.0,
+        "estimate": 1.0,
+        "n_clusters": 81,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "oracle_cost_regret": {
+        "available": false,
+        "n_clusters": 0
+      },
+      "perceptual_distance": {
+        "available": true,
+        "ci95_high": 0.473503932574143,
+        "ci95_low": 0.29486637452824244,
+        "estimate": 0.38483893943743575,
+        "n_clusters": 36,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "ssim": {
+        "available": true,
+        "ci95_high": 0.7671001307431775,
+        "ci95_low": 0.5958835764973014,
+        "estimate": 0.6837433283071067,
+        "n_clusters": 36,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "success": {
+        "available": true,
+        "ci95_high": 0.5555555555555556,
+        "ci95_low": 0.3333333333333333,
+        "estimate": 0.4444444444444444,
+        "n_clusters": 81,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "total_model_calls": 81
+    }
+  },
+  "rq": "RQ3",
+  "schema_version": "1.0",
+  "scope": "development",
+  "shifted_traces_evaluated": 81,
+  "warmup_iterations": 10
+}

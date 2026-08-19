@@ -1,0 +1,190 @@
+==========================================================
+EditTrace-XAI - TEST BENCHMARK GENERATION
+Started: Mon Aug  3 07:51:16 AM UTC 2026
+==========================================================
+
+===== ResNet50 B-Single =====
+{
+  "benchmark": "B-Single",
+  "requested": 2000,
+  "accepted": 601,
+  "failed": 1399,
+  "output": "artifacts/traces/resnet50_B-Single_test_outcomes.jsonl"
+}
+
+===== ViT-B16 B-Single =====
+{
+  "benchmark": "B-Single",
+  "requested": 2000,
+  "accepted": 619,
+  "failed": 1381,
+  "output": "artifacts/traces/vit_b_16_B-Single_test_outcomes.jsonl"
+}
+
+===== ResNet50 B-Interaction =====
+{
+  "benchmark": "B-Interaction",
+  "requested": 2000,
+  "accepted": 640,
+  "failed": 1360,
+  "output": "artifacts/traces/resnet50_B-Interaction_test_outcomes.jsonl"
+}
+
+===== ViT-B16 B-Interaction =====
+{
+  "benchmark": "B-Interaction",
+  "requested": 2000,
+  "accepted": 571,
+  "failed": 1429,
+  "output": "artifacts/traces/vit_b_16_B-Interaction_test_outcomes.jsonl"
+}
+
+===== ResNet50 B-Oracle =====
+{
+  "traces": 2000,
+  "output": "artifacts/traces/resnet50_b_oracle_test.jsonl"
+}
+
+===== ViT-B16 B-Oracle =====
+{
+  "traces": 2000,
+  "output": "artifacts/traces/vit_b_16_b_oracle_test.jsonl"
+}
+
+===== ResNet50 Oracle shifted50 =====
+{
+  "input": "/home/dange/EditTrace/edittrace-xai_v0.3/artifacts/traces/resnet50_b_oracle_test.jsonl",
+  "input_sha256": "230dd39b5cde90e85c8759b0336319e3e97111d1dc84ad004d4e09a218970582",
+  "model": "torchvision:resnet50:IMAGENET1K_V2",
+  "output": "/home/dange/EditTrace/edittrace-xai_v0.3/artifacts/traces/resnet50_b_oracle_shifted50_test.jsonl",
+  "output_sha256": "6bbe41b4814cbfb19b02379519df2c05f7e45eec53b8eba9e7e520e5bc5de513",
+  "purpose": "DEV-001 deterministic shifted B-Oracle subset",
+  "requested_count": 50,
+  "schema_version": "1.0",
+  "selected_trace_ids": [
+    "b-natural-00960/0923033137913445.jpg-3d4d5e84",
+    "b-natural-00499/113080617983407.jpg-16967fb3",
+    "b-natural-00226/6387037048149207.jpg-01a29feb",
+    "b-natural-00507/892482370134245.jpg-6572fa8c",
+    "b-natural-00069/1806734104640233.jpg-1e5bf65b",
+    "b-natural-00054/740444600712434.jpg-26dccb94",
+    "b-natural-00815/6722203751048135.jpg-76dbdb33",
+    "b-natural-00163/619948776226064.jpg-09a2aed9",
+    "b-natural-00859/001267426144758.jpg-6649f2b1",
+    "b-natural-00374/399036137420878.jpg-5da86baa",
+    "b-natural-00197/754681568735945.jpg-62ca2f70",
+    "b-natural-00434/615729438109089.jpg-77ea4fcd",
+    "b-natural-00679/191736542814237.jpg-3c0bcf6b",
+    "b-natural-00838/103416861584036.jpg-561c6e95",
+    "b-natural-00386/105883998314728.jpg-548494da",
+    "b-natural-00484/065585983819594.jpg-1247bc08",
+    "b-natural-00227/463398287580328.jpg-1bc5f477",
+    "b-natural-00325/3277443199223435.jpg-506c703b",
+    "b-natural-00619/047974055388557.jpg-09f8f3df",
+    "b-natural-00853/9718913821612718.jpg-6beab452",
+    "b-natural-00665/182062038858579.jpg-1c390cd1",
+    "b-natural-00764/036420207452888542.jpg-5ee0e077",
+    "b-natural-00635/2956004071863902.jpg-01d92808",
+    "b-natural-00300/632228280076952.jpg-406f4247",
+    "b-natural-00300/9049641534549513.jpg-3aaf7b80",
+    "b-natural-00472/658929870187726.jpg-5da405c5",
+    "b-natural-00256/60393454995267.jpg-6dd8352d",
+    "b-natural-00370/565489906321967.jpg-3ef80289",
+    "b-natural-00532/693774062416215.jpg-6c968ce3",
+    "b-natural-00954/691219376213753.jpg-2c267a6b",
+    "b-natural-00611/8744699924048849.jpg-27c95015",
+    "b-natural-00412/56718670162396.jpg-12322aee",
+    "b-natural-00549/247316523090602.jpg-55a07c22",
+    "b-natural-00155/3019386143034883.jpg-09ab4d41",
+    "b-natural-00900/756348881944499.jpg-5a1bdafe",
+    "b-natural-00681/974188816568711.jpg-7019a9e3",
+    "b-natural-00673/9017222607715876.jpg-10f07852",
+    "b-natural-00792/000566835725892.jpg-67168c01",
+    "b-natural-00312/4424571015356322.jpg-1b26e1eb",
+    "b-natural-00935/996804897922755.jpg-34a1e4be",
+    "b-natural-00512/44956016651935.jpg-5d2f30ea",
+    "b-natural-00213/9789675170346486.jpg-1131aba3",
+    "b-natural-00249/972182133212348.jpg-2f9d3cee",
+    "b-natural-00759/839816355458081.jpg-4d47336f",
+    "b-natural-00742/970581528021147.jpg-59a8aedd",
+    "b-natural-00897/2661841601035453.jpg-39363bea",
+    "b-natural-00180/4695003426964748.jpg-1051b7cc",
+    "b-natural-00040/90277024519693.jpg-17966d19",
+    "b-natural-00650/562623749531608.jpg-5b448cea",
+    "b-natural-00452/604060990770889.jpg-0ef18875"
+  ],
+  "selection_seed": 20260801,
+  "shifted_available": 304
+}
+
+===== ViT-B16 Oracle shifted50 =====
+{
+  "input": "/home/dange/EditTrace/edittrace-xai_v0.3/artifacts/traces/vit_b_16_b_oracle_test.jsonl",
+  "input_sha256": "b2630043629c8438ea10e74d5efffb0b14c4f6a7d73a4c06b2c907b218f2f5bd",
+  "model": "torchvision:vit_b_16:IMAGENET1K_V1",
+  "output": "/home/dange/EditTrace/edittrace-xai_v0.3/artifacts/traces/vit_b_16_b_oracle_shifted50_test.jsonl",
+  "output_sha256": "8f318a86b42289758aa73dc237d3976adbc2cad8f6a5e580af68c060fecc666d",
+  "purpose": "DEV-001 deterministic shifted B-Oracle subset",
+  "requested_count": 50,
+  "schema_version": "1.0",
+  "selected_trace_ids": [
+    "b-natural-00681/974188816568711.jpg-35ff02a9",
+    "b-natural-00930/207789969179735.jpg-3ac95b03",
+    "b-natural-00067/640349345117.jpg-4b22f13f",
+    "b-natural-00147/5585859178310086.jpg-29627ce4",
+    "b-natural-00954/691219376213753.jpg-18118e98",
+    "b-natural-00725/2105811687912182.jpg-02af18f9",
+    "b-natural-00495/4231850656391747.jpg-6ebc827b",
+    "b-natural-00119/200909524162415.jpg-5f3cec9c",
+    "b-natural-00843/1915593217364648.jpg-5f69d009",
+    "b-natural-00742/51364760711264.jpg-2824a854",
+    "b-natural-00520/154835118949992.jpg-3cf9aa07",
+    "b-natural-00081/129767213066017.jpg-62a2217e",
+    "b-natural-00736/815945886310361.jpg-6f289b5b",
+    "b-natural-00855/1345480147676077.jpg-62e9f83d",
+    "b-natural-00712/780137897781159.jpg-7c70a1e1",
+    "b-natural-00050/4664295637161808.jpg-100c2854",
+    "b-natural-00205/5180171439641754.jpg-7afe0d50",
+    "b-natural-00426/368377587288488.jpg-0aa93bcf",
+    "b-natural-00148/154488518202148.jpg-4b2a9e01",
+    "b-natural-00292/6750782088372893.jpg-0cc2e805",
+    "b-natural-00599/530221346707595.jpg-6ec498cd",
+    "b-natural-00792/2484786262600231.jpg-34c0f373",
+    "b-natural-00861/527669313399866.jpg-5f696dc0",
+    "b-natural-00353/838576021746867.jpg-57d86705",
+    "b-natural-00799/276090147856504.jpg-569fc023",
+    "b-natural-00696/8850013824575018.jpg-738bc6be",
+    "b-natural-00621/7188041395616553.jpg-712ad825",
+    "b-natural-00761/193320470564248.jpg-080b4f48",
+    "b-natural-00319/038672019296446.jpg-30e936fe",
+    "b-natural-00911/222017613558982.jpg-2dd69138",
+    "b-natural-00955/889150917480514.jpg-376f0ce5",
+    "b-natural-00680/116532006928819.jpg-555664fa",
+    "b-natural-00140/276537933987713.jpg-12e1fbd0",
+    "b-natural-00934/64288266632181.jpg-06622289",
+    "b-natural-00263/1838185777781074.jpg-1926051a",
+    "b-natural-00635/897518524554232.jpg-1662e4e1",
+    "b-natural-00357/618878310564372.jpg-24b4510c",
+    "b-natural-00300/9049641534549513.jpg-71277ba7",
+    "b-natural-00969/71490885864658.jpg-333b34c1",
+    "b-natural-00790/477687746551464.jpg-44c40bdc",
+    "b-natural-00589/1079942235743032.jpg-3b2f9a54",
+    "b-natural-00910/318113920238192.jpg-40802d0e",
+    "b-natural-00574/3835112169295338.jpg-037621d7",
+    "b-natural-00939/753129967150609.jpg-38eceaef",
+    "b-natural-00096/713557438474081.jpg-0e1ee8f6",
+    "b-natural-00544/752740924284742.jpg-78eec47d",
+    "b-natural-00877/072423877950369.jpg-7ab130ea",
+    "b-natural-00608/686663337276953.jpg-047523f6",
+    "b-natural-00067/3123953950009264.jpg-36ff7203",
+    "b-natural-00794/4571520372765492.jpg-1c55f488"
+  ],
+  "selection_seed": 20260801,
+  "shifted_available": 266
+}
+
+==========================================================
+TEST BENCHMARK GENERATION COMPLETED
+Finished: Wed Aug  5 08:10:31 AM UTC 2026
+Log: artifacts/logs/run_generate_test_benchmarks_20260803_075116.log
+==========================================================

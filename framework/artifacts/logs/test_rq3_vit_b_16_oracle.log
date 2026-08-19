@@ -1,0 +1,259 @@
+/home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages/torchvision/models/_utils.py:207: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages/torchvision/models/_utils.py:222: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages/lpips/weights/v0.1/alex.pth
+{
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 20260802,
+  "config": "/home/dange/EditTrace/edittrace-xai_v0.3/configs/development.yaml",
+  "config_sha256": "43de78ab8234a8bbc2c9cdc2cd17d3ff3fce271363afcaca66fca3c30333cafa",
+  "errors": [],
+  "exhaustive_verification": true,
+  "input": "/home/dange/EditTrace/edittrace-xai_v0.3/artifacts/traces/vit_b_16_b_oracle_shifted50_test.jsonl",
+  "input_sha256": "8f318a86b42289758aa73dc237d3976adbc2cad8f6a5e580af68c060fecc666d",
+  "input_traces": 50,
+  "model": "torchvision:vit_b_16:IMAGENET1K_V1",
+  "oracle_limit": 50,
+  "perceptual_metric": "lpips",
+  "results": {
+    "constrained_repair": {
+      "action_count": {
+        "available": true,
+        "ci95_high": 1.1521739130434783,
+        "ci95_low": 1.0,
+        "estimate": 1.065217391304348,
+        "n_clusters": 46,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "mean_latency_ms": 7224.627561599998,
+      "normalized_parameter_movement": {
+        "available": true,
+        "ci95_high": 1.1195652173913044,
+        "ci95_low": 0.9630434782608696,
+        "estimate": 1.0347826086956522,
+        "n_clusters": 46,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "oracle_cost_regret": {
+        "available": true,
+        "ci95_high": 0.0,
+        "ci95_low": 0.0,
+        "estimate": 0.0,
+        "n_clusters": 46,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "perceptual_distance": {
+        "available": true,
+        "ci95_high": 0.42276828700433605,
+        "ci95_low": 0.27415975466643905,
+        "estimate": 0.3478669457987923,
+        "n_clusters": 46,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "ssim": {
+        "available": true,
+        "ci95_high": 0.7744279539924955,
+        "ci95_low": 0.6016631835921104,
+        "estimate": 0.6909663112225002,
+        "n_clusters": 46,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "success": {
+        "available": true,
+        "ci95_high": 0.98,
+        "ci95_low": 0.84,
+        "estimate": 0.92,
+        "n_clusters": 50,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "total_model_calls": 5280
+    },
+    "exhaustive_oracle": {
+      "action_count": {
+        "available": true,
+        "ci95_high": 1.1521739130434783,
+        "ci95_low": 1.0,
+        "estimate": 1.065217391304348,
+        "n_clusters": 46,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "mean_latency_ms": 7224.627561599998,
+      "normalized_parameter_movement": {
+        "available": true,
+        "ci95_high": 1.1195652173913044,
+        "ci95_low": 0.9630434782608696,
+        "estimate": 1.0347826086956522,
+        "n_clusters": 46,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "oracle_cost_regret": {
+        "available": true,
+        "ci95_high": 0.0,
+        "ci95_low": 0.0,
+        "estimate": 0.0,
+        "n_clusters": 46,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "perceptual_distance": {
+        "available": true,
+        "ci95_high": 0.42276828700433605,
+        "ci95_low": 0.27415975466643905,
+        "estimate": 0.3478669457987923,
+        "n_clusters": 46,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "ssim": {
+        "available": true,
+        "ci95_high": 0.7744279539924955,
+        "ci95_low": 0.6016631835921104,
+        "estimate": 0.6909663112225002,
+        "n_clusters": 46,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "success": {
+        "available": true,
+        "ci95_high": 0.98,
+        "ci95_low": 0.84,
+        "estimate": 0.92,
+        "n_clusters": 50,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "total_model_calls": 5280
+    },
+    "last_action_rollback": {
+      "action_count": {
+        "available": true,
+        "ci95_high": 1.0,
+        "ci95_low": 1.0,
+        "estimate": 1.0,
+        "n_clusters": 50,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "mean_latency_ms": 65.34698834,
+      "normalized_parameter_movement": {
+        "available": true,
+        "ci95_high": 1.0,
+        "ci95_low": 1.0,
+        "estimate": 1.0,
+        "n_clusters": 50,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "oracle_cost_regret": {
+        "available": true,
+        "ci95_high": 0.26532831922328715,
+        "ci95_low": 0.046910245747615896,
+        "estimate": 0.1488428140679995,
+        "n_clusters": 12,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "perceptual_distance": {
+        "available": true,
+        "ci95_high": 0.4924997860953832,
+        "ci95_low": 0.24540527852950617,
+        "estimate": 0.3742860141210258,
+        "n_clusters": 12,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "ssim": {
+        "available": true,
+        "ci95_high": 0.8231754592489328,
+        "ci95_low": 0.5333583915285284,
+        "estimate": 0.689728454744352,
+        "n_clusters": 12,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "success": {
+        "available": true,
+        "ci95_high": 0.36,
+        "ci95_low": 0.12,
+        "estimate": 0.24,
+        "n_clusters": 50,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "total_model_calls": 50
+    },
+    "max_magnitude_rollback": {
+      "action_count": {
+        "available": true,
+        "ci95_high": 1.0,
+        "ci95_low": 1.0,
+        "estimate": 1.0,
+        "n_clusters": 50,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "mean_latency_ms": 65.66940045999999,
+      "normalized_parameter_movement": {
+        "available": true,
+        "ci95_high": 1.0,
+        "ci95_low": 1.0,
+        "estimate": 1.0,
+        "n_clusters": 50,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "oracle_cost_regret": {
+        "available": true,
+        "ci95_high": 0.20693186201776065,
+        "ci95_low": 0.027030083749975477,
+        "estimate": 0.10633350310048886,
+        "n_clusters": 21,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "perceptual_distance": {
+        "available": true,
+        "ci95_high": 0.5481979999779946,
+        "ci95_low": 0.3353625203482807,
+        "estimate": 0.4429019286873795,
+        "n_clusters": 21,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "ssim": {
+        "available": true,
+        "ci95_high": 0.7208765718975217,
+        "ci95_low": 0.47434126610028504,
+        "estimate": 0.5989299726763505,
+        "n_clusters": 21,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "success": {
+        "available": true,
+        "ci95_high": 0.56,
+        "ci95_low": 0.28,
+        "estimate": 0.42,
+        "n_clusters": 50,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "total_model_calls": 50
+    }
+  },
+  "rq": "RQ3",
+  "schema_version": "1.0",
+  "scope": "evaluation",
+  "shifted_traces_evaluated": 50,
+  "warmup_iterations": 10
+}

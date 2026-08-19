@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering
+\caption{RQ3 development results. Replace development with held-out results for the paper.}
+\label{tab:rq3}
+\begin{tabular}{llll}
+\toprule
+Model & Method & Recovery (95\% CI) & Perceptual distance (95\% CI) \\
+\midrule
+ResNet-50 & constrained\_repair & 0.967 [0.947, 0.987] & 0.356 [0.327, 0.384] \\
+ResNet-50 & last\_action\_rollback & 0.322 [0.270, 0.375] & 0.365 [0.315, 0.414] \\
+ResNet-50 & max\_magnitude\_rollback & 0.474 [0.418, 0.530] & 0.434 [0.392, 0.474] \\
+ViT-B/16 & constrained\_repair & 0.955 [0.929, 0.977] & 0.355 [0.323, 0.387] \\
+ViT-B/16 & last\_action\_rollback & 0.297 [0.241, 0.353] & 0.385 [0.330, 0.440] \\
+ViT-B/16 & max\_magnitude\_rollback & 0.459 [0.398, 0.519] & 0.442 [0.399, 0.485] \\
+\bottomrule
+\end{tabular}
+\end{table}

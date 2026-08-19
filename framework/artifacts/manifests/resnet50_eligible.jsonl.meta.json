@@ -1,0 +1,9 @@
+{
+  "model_id": "torchvision:resnet50:IMAGENET1K_V2",
+  "seed": 20260801,
+  "development_candidate_pool": 5000,
+  "development_selected": 500,
+  "development_evaluated": 626,
+  "test_selected": 2000,
+  "test_evaluated": 2489
+}

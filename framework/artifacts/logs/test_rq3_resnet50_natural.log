@@ -1,0 +1,186 @@
+/home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages/torchvision/models/_utils.py:207: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages/torchvision/models/_utils.py:222: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages/lpips/weights/v0.1/alex.pth
+{
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 20260802,
+  "config": "/home/dange/EditTrace/edittrace-xai_v0.3/configs/development.yaml",
+  "config_sha256": "43de78ab8234a8bbc2c9cdc2cd17d3ff3fce271363afcaca66fca3c30333cafa",
+  "errors": [],
+  "exhaustive_verification": false,
+  "input": "/home/dange/EditTrace/edittrace-xai_v0.3/artifacts/traces/resnet50_b_natural_test.jsonl",
+  "input_sha256": "ad603d204dea331c266a84d87ce49d594ef549c5336567d228bd1729adeafc77",
+  "input_traces": 2000,
+  "model": "torchvision:resnet50:IMAGENET1K_V2",
+  "oracle_limit": null,
+  "perceptual_metric": "lpips",
+  "results": {
+    "constrained_repair": {
+      "action_count": {
+        "available": true,
+        "ci95_high": 1.0952380952380953,
+        "ci95_low": 1.0374149659863945,
+        "estimate": 1.064625850340136,
+        "n_clusters": 294,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "mean_latency_ms": 863.8910751611842,
+      "normalized_parameter_movement": {
+        "available": true,
+        "ci95_high": 1.0690476190476188,
+        "ci95_low": 1.0037414965986395,
+        "estimate": 1.035544217687075,
+        "n_clusters": 294,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "oracle_cost_regret": {
+        "available": false,
+        "n_clusters": 0
+      },
+      "perceptual_distance": {
+        "available": true,
+        "ci95_high": 0.3842261860998455,
+        "ci95_low": 0.3268478083859046,
+        "estimate": 0.3558723709694914,
+        "n_clusters": 294,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "ssim": {
+        "available": true,
+        "ci95_high": 0.7188791893464571,
+        "ci95_low": 0.6617623289025438,
+        "estimate": 0.6905124926465502,
+        "n_clusters": 294,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "success": {
+        "available": true,
+        "ci95_high": 0.9868421052631579,
+        "ci95_low": 0.9473684210526315,
+        "estimate": 0.9671052631578947,
+        "n_clusters": 304,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "total_model_calls": 6230
+    },
+    "last_action_rollback": {
+      "action_count": {
+        "available": true,
+        "ci95_high": 1.0,
+        "ci95_low": 1.0,
+        "estimate": 1.0,
+        "n_clusters": 304,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "mean_latency_ms": 36.592896756578945,
+      "normalized_parameter_movement": {
+        "available": true,
+        "ci95_high": 1.0,
+        "ci95_low": 1.0,
+        "estimate": 1.0,
+        "n_clusters": 304,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "oracle_cost_regret": {
+        "available": false,
+        "n_clusters": 0
+      },
+      "perceptual_distance": {
+        "available": true,
+        "ci95_high": 0.4144340167316247,
+        "ci95_low": 0.31472332523708063,
+        "estimate": 0.3650475432716158,
+        "n_clusters": 98,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "ssim": {
+        "available": true,
+        "ci95_high": 0.7635424101591817,
+        "ci95_low": 0.6709926381749193,
+        "estimate": 0.7174053573119028,
+        "n_clusters": 98,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "success": {
+        "available": true,
+        "ci95_high": 0.375,
+        "ci95_low": 0.26973684210526316,
+        "estimate": 0.3223684210526316,
+        "n_clusters": 304,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "total_model_calls": 304
+    },
+    "max_magnitude_rollback": {
+      "action_count": {
+        "available": true,
+        "ci95_high": 1.0,
+        "ci95_low": 1.0,
+        "estimate": 1.0,
+        "n_clusters": 304,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "mean_latency_ms": 36.60111173026316,
+      "normalized_parameter_movement": {
+        "available": true,
+        "ci95_high": 1.0,
+        "ci95_low": 1.0,
+        "estimate": 1.0,
+        "n_clusters": 304,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "oracle_cost_regret": {
+        "available": false,
+        "n_clusters": 0
+      },
+      "perceptual_distance": {
+        "available": true,
+        "ci95_high": 0.474383038421446,
+        "ci95_low": 0.3918568159721973,
+        "estimate": 0.43393777785564047,
+        "n_clusters": 144,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "ssim": {
+        "available": true,
+        "ci95_high": 0.6529074407503157,
+        "ci95_low": 0.5697495413046327,
+        "estimate": 0.6114050042132103,
+        "n_clusters": 144,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "success": {
+        "available": true,
+        "ci95_high": 0.5296052631578947,
+        "ci95_low": 0.41776315789473684,
+        "estimate": 0.47368421052631576,
+        "n_clusters": 304,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "total_model_calls": 304
+    }
+  },
+  "rq": "RQ3",
+  "schema_version": "1.0",
+  "scope": "evaluation",
+  "shifted_traces_evaluated": 304,
+  "warmup_iterations": 10
+}

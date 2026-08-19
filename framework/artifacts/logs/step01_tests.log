@@ -1,0 +1,28 @@
+test_clustered_bootstrap_and_paired_difference (test_evaluation.EvaluationTests.test_clustered_bootstrap_and_paired_difference) ... ok
+test_latex_table_writer_escapes_method_names (test_evaluation.EvaluationTests.test_latex_table_writer_escapes_method_names) ... ok
+test_operation_magnitude_is_bounded (test_evaluation.EvaluationTests.test_operation_magnitude_is_bounded) ... ok
+test_rq1_designated_trigger_is_ranked_first (test_evaluation.EvaluationTests.test_rq1_designated_trigger_is_ranked_first) ... ok
+test_rq2_designated_pair_is_ranked_first (test_evaluation.EvaluationTests.test_rq2_designated_pair_is_ranked_first) ... ok
+test_rq3_single_rollback_restores_target (test_evaluation.EvaluationTests.test_rq3_single_rollback_restores_target) ... ok
+test_rq4_uses_only_primary_methods (test_evaluation.EvaluationTests.test_rq4_uses_only_primary_methods) ... ok
+test_every_counterfactual_executes (test_generators.GeneratorTests.test_every_counterfactual_executes) ... ok
+test_lengths_are_balanced_by_ordinal (test_generators.GeneratorTests.test_lengths_are_balanced_by_ordinal) ... ok
+test_natural_is_reproducible (test_generators.GeneratorTests.test_natural_is_reproducible) ... ok
+test_oracle_subset_is_stable (test_generators.GeneratorTests.test_oracle_subset_is_stable) ... ok
+test_flat_manifest_and_cross_model_audit (test_model_generators.ModelGeneratorTests.test_flat_manifest_and_cross_model_audit) ... ok
+test_global_candidate_pools_are_disjoint (test_model_generators.ModelGeneratorTests.test_global_candidate_pools_are_disjoint) ... ok
+test_interaction_generator_accepts_pair_only_case (test_model_generators.ModelGeneratorTests.test_interaction_generator_accepts_pair_only_case) ... ok
+test_single_generator_accepts_predeclared_trigger (test_model_generators.ModelGeneratorTests.test_single_generator_accepts_predeclared_trigger) ... ok
+test_attenuation_endpoints (test_schema_engine.SchemaEngineTests.test_attenuation_endpoints) ... ok
+test_deterministic_original_replay (test_schema_engine.SchemaEngineTests.test_deterministic_original_replay) ... ok
+test_identity_operations (test_schema_engine.SchemaEngineTests.test_identity_operations) ... ok
+test_invalid_crop_rejected (test_schema_engine.SchemaEngineTests.test_invalid_crop_rejected) ... ok
+test_remove_and_attenuate (test_schema_engine.SchemaEngineTests.test_remove_and_attenuate) ... ok
+test_schema_round_trip (test_schema_engine.SchemaEngineTests.test_schema_round_trip) ... ok
+test_unique_operation_types (test_schema_engine.SchemaEngineTests.test_unique_operation_types) ... ok
+test_unknown_action_fails_typed (test_schema_engine.SchemaEngineTests.test_unknown_action_fails_typed) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 0.462s
+
+OK

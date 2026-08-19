@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering
+\caption{RQ4 development results. Replace development with held-out results for the paper.}
+\label{tab:rq4}
+\begin{tabular}{llllll}
+\toprule
+Component & Model & n & Median ms & p95 ms & Calls \\
+\midrule
+diagnosis & ResNet-50 & 158 & 172.51 & 273.25 & 5.0 \\
+diagnosis & ViT-B/16 & 156 & 293.35 & 477.81 & 5.0 \\
+interaction & ResNet-50 & 161 & 515.61 & 853.91 & 16.0 \\
+interaction & ViT-B/16 & 144 & 933.06 & 1547.90 & 16.0 \\
+repair & ResNet-50 & 81 & 250.21 & 4966.31 & 6.0 \\
+repair & ViT-B/16 & 74 & 376.23 & 7487.02 & 5.0 \\
+\bottomrule
+\end{tabular}
+\end{table}

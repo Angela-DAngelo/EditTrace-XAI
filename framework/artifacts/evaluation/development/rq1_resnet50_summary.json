@@ -1,0 +1,266 @@
+{
+  "accepted_traces": 158,
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 20260802,
+  "config": "/home/dange/EditTrace/edittrace-xai_v0.3/configs/development.yaml",
+  "config_sha256": "43de78ab8234a8bbc2c9cdc2cd17d3ff3fce271363afcaca66fca3c30333cafa",
+  "errors": [],
+  "ig_steps": 32,
+  "include_ig": true,
+  "input": "/home/dange/EditTrace/edittrace-xai_v0.3/artifacts/traces/resnet50_B-Single_dev_outcomes.jsonl",
+  "input_sha256": "f056cd8eccbaa71702875af148f3d70523695afa5f51fc8aba4f0515427e4a6a",
+  "model": "torchvision:resnet50:IMAGENET1K_V2",
+  "random_baseline_seed": 20260802,
+  "results": {
+    "methods": {
+      "adjacent_score_change": {
+        "mean_latency_ms": 139.1622891329114,
+        "mrr": {
+          "available": true,
+          "ci95_high": 0.9440928270042194,
+          "ci95_low": 0.8823839662447257,
+          "estimate": 0.9145569620253164,
+          "n_clusters": 158,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "top1": {
+          "available": true,
+          "ci95_high": 0.8987341772151899,
+          "ci95_low": 0.7848101265822784,
+          "estimate": 0.8417721518987342,
+          "n_clusters": 158,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "total_model_calls": 847
+      },
+      "counterfactual_replay": {
+        "mean_latency_ms": 182.02899219620252,
+        "mrr": {
+          "available": true,
+          "ci95_high": 1.0,
+          "ci95_low": 1.0,
+          "estimate": 1.0,
+          "n_clusters": 158,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "top1": {
+          "available": true,
+          "ci95_high": 1.0,
+          "ci95_low": 1.0,
+          "estimate": 1.0,
+          "n_clusters": 158,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "total_model_calls": 847
+      },
+      "edit_magnitude": {
+        "mean_latency_ms": 0.03322537341772152,
+        "mrr": {
+          "available": true,
+          "ci95_high": 0.7447257383966244,
+          "ci95_low": 0.6491561181434599,
+          "estimate": 0.6965189873417721,
+          "n_clusters": 158,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "top1": {
+          "available": true,
+          "ci95_high": 0.5632911392405063,
+          "ci95_low": 0.41139240506329117,
+          "estimate": 0.4873417721518987,
+          "n_clusters": 158,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "total_model_calls": 0
+      },
+      "integrated_gradients_support": {
+        "mean_latency_ms": 2454.8531019493666,
+        "mrr": {
+          "available": true,
+          "ci95_high": 0.5209915611814345,
+          "ci95_low": 0.4273206751054853,
+          "estimate": 0.4726793248945148,
+          "n_clusters": 158,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "top1": {
+          "available": true,
+          "ci95_high": 0.2911392405063291,
+          "ci95_low": 0.15822784810126583,
+          "estimate": 0.22151898734177214,
+          "n_clusters": 158,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "total_model_calls": 5056
+      },
+      "last_action": {
+        "mean_latency_ms": 0.00354453164556962,
+        "mrr": {
+          "available": true,
+          "ci95_high": 0.5281671940928271,
+          "ci95_low": 0.44103111814345997,
+          "estimate": 0.4845991561181435,
+          "n_clusters": 158,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "top1": {
+          "available": true,
+          "ci95_high": 0.26582278481012656,
+          "ci95_low": 0.13924050632911392,
+          "estimate": 0.20253164556962025,
+          "n_clusters": 158,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "total_model_calls": 0
+      },
+      "random": {
+        "mean_latency_ms": 0.13419412658227844,
+        "mrr": {
+          "available": true,
+          "ci95_high": 0.5885047468354431,
+          "ci95_low": 0.4933517932489453,
+          "estimate": 0.5404008438818566,
+          "n_clusters": 158,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "top1": {
+          "available": true,
+          "ci95_high": 0.3670886075949367,
+          "ci95_low": 0.22784810126582278,
+          "estimate": 0.2974683544303797,
+          "n_clusters": 158,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "total_model_calls": 0
+      }
+    },
+    "paired_differences": [
+      {
+        "available": true,
+        "baseline": "adjacent_score_change",
+        "ci95_high": 0.21518987341772153,
+        "ci95_low": 0.10126582278481013,
+        "estimate": 0.15822784810126583,
+        "method": "counterfactual_replay",
+        "n_clusters": 158,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      {
+        "available": true,
+        "baseline": "adjacent_score_change",
+        "ci95_high": 0.11761603375527428,
+        "ci95_low": 0.055907172995780595,
+        "estimate": 0.08544303797468354,
+        "method": "counterfactual_replay",
+        "n_clusters": 158,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      {
+        "available": true,
+        "baseline": "edit_magnitude",
+        "ci95_high": 0.5886075949367089,
+        "ci95_low": 0.43670886075949367,
+        "estimate": 0.5126582278481012,
+        "method": "counterfactual_replay",
+        "n_clusters": 158,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      {
+        "available": true,
+        "baseline": "edit_magnitude",
+        "ci95_high": 0.3508438818565401,
+        "ci95_low": 0.2552742616033755,
+        "estimate": 0.30348101265822786,
+        "method": "counterfactual_replay",
+        "n_clusters": 158,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      {
+        "available": true,
+        "baseline": "integrated_gradients_support",
+        "ci95_high": 0.8417721518987342,
+        "ci95_low": 0.7088607594936709,
+        "estimate": 0.7784810126582279,
+        "method": "counterfactual_replay",
+        "n_clusters": 158,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      {
+        "available": true,
+        "baseline": "integrated_gradients_support",
+        "ci95_high": 0.5726793248945147,
+        "ci95_low": 0.4790084388185654,
+        "estimate": 0.5273206751054852,
+        "method": "counterfactual_replay",
+        "n_clusters": 158,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      {
+        "available": true,
+        "baseline": "last_action",
+        "ci95_high": 0.8607594936708861,
+        "ci95_low": 0.7341772151898734,
+        "estimate": 0.7974683544303798,
+        "method": "counterfactual_replay",
+        "n_clusters": 158,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      {
+        "available": true,
+        "baseline": "last_action",
+        "ci95_high": 0.55896888185654,
+        "ci95_low": 0.47183280590717297,
+        "estimate": 0.5154008438818566,
+        "method": "counterfactual_replay",
+        "n_clusters": 158,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      {
+        "available": true,
+        "baseline": "random",
+        "ci95_high": 0.7721518987341772,
+        "ci95_low": 0.6329113924050633,
+        "estimate": 0.7025316455696202,
+        "method": "counterfactual_replay",
+        "n_clusters": 158,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      {
+        "available": true,
+        "baseline": "random",
+        "ci95_high": 0.5066482067510548,
+        "ci95_low": 0.4114952531645569,
+        "estimate": 0.4595991561181434,
+        "method": "counterfactual_replay",
+        "n_clusters": 158,
+        "resamples": 10000,
+        "seed": 20260802
+      }
+    ]
+  },
+  "rq": "RQ1",
+  "schema_version": "1.0",
+  "scope": "development",
+  "warmup_iterations": 10
+}

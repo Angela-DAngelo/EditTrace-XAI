@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ImageNet data: never commit dataset images
+data/images/**
+!data/images/.gitkeep
+
+# Model weights and caches
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+.cache/
+
+# Runtime and evaluation artifacts
+output/
+outputs/
+results/
+logs/
+*.log
+*.bak
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example

@@ -1,0 +1,132 @@
+{
+  "accepted_traces": 571,
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 20260802,
+  "errors": [],
+  "input": "/home/dange/EditTrace/edittrace-xai_v0.3/artifacts/traces/vit_b_16_B-Interaction_test_outcomes.jsonl",
+  "input_sha256": "5080c6860079dbc15bcd58de0b4dbae3cc4665aa15c6a3762a9d2c488c9a1a5b",
+  "model": "torchvision:vit_b_16:IMAGENET1K_V1",
+  "results": {
+    "methods": {
+      "difference_in_differences": {
+        "average_precision": {
+          "available": true,
+          "ci95_high": 0.5899466249356793,
+          "ci95_low": 0.5319420770657636,
+          "estimate": 0.5614456325927429,
+          "n_clusters": 571,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "mean_latency_ms": 996.6594102732049,
+        "reciprocal_rank": {
+          "available": true,
+          "ci95_high": 0.5899466249356793,
+          "ci95_low": 0.5319420770657636,
+          "estimate": 0.5614456325927429,
+          "n_clusters": 571,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "selected_pair_only_recovery": {
+          "available": true,
+          "ci95_high": 0.6865148861646234,
+          "ci95_low": 0.6094570928196147,
+          "estimate": 0.647985989492119,
+          "n_clusters": 571,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "top1": {
+          "available": true,
+          "ci95_high": 0.4080560420315236,
+          "ci95_low": 0.329246935201401,
+          "estimate": 0.36952714535901926,
+          "n_clusters": 571,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "total_model_calls": 9053
+      },
+      "independent_action": {
+        "average_precision": {
+          "available": true,
+          "ci95_high": 0.37325517630355637,
+          "ci95_low": 0.3226039232464364,
+          "estimate": 0.34755871682316514,
+          "n_clusters": 571,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "mean_latency_ms": 0.0,
+        "reciprocal_rank": {
+          "available": true,
+          "ci95_high": 0.37325517630355637,
+          "ci95_low": 0.3226039232464364,
+          "estimate": 0.34755871682316514,
+          "n_clusters": 571,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "selected_pair_only_recovery": {
+          "available": true,
+          "ci95_high": 0.37653239929947463,
+          "ci95_low": 0.29947460595446584,
+          "estimate": 0.3380035026269702,
+          "n_clusters": 571,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "top1": {
+          "available": true,
+          "ci95_high": 0.1978984238178634,
+          "ci95_low": 0.13660245183887915,
+          "estimate": 0.16637478108581435,
+          "n_clusters": 571,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "total_model_calls": 0
+      }
+    },
+    "paired_differences": [
+      {
+        "available": true,
+        "baseline": "independent_action",
+        "ci95_high": 0.2539404553415061,
+        "ci95_low": 0.15061295971978983,
+        "estimate": 0.2031523642732049,
+        "method": "difference_in_differences",
+        "n_clusters": 571,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      {
+        "available": true,
+        "baseline": "independent_action",
+        "ci95_high": 0.2528923841774104,
+        "ci95_low": 0.1742232150025495,
+        "estimate": 0.21388691576957777,
+        "method": "difference_in_differences",
+        "n_clusters": 571,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      {
+        "available": true,
+        "baseline": "independent_action",
+        "ci95_high": 0.35901926444833626,
+        "ci95_low": 0.2609457092819615,
+        "estimate": 0.30998248686514884,
+        "method": "difference_in_differences",
+        "n_clusters": 571,
+        "resamples": 10000,
+        "seed": 20260802
+      }
+    ]
+  },
+  "rq": "RQ2",
+  "schema_version": "1.0",
+  "scope": "evaluation",
+  "warmup_iterations": 10
+}

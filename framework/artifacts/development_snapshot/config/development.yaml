@@ -1,0 +1,31 @@
+schema_version: "1.0"
+global_seed: 20260801
+data:
+  development_candidate_pool: 5000
+  development_eligible_per_model: 500
+  test_eligible_per_model: 2000
+history_lengths: [3, 4, 5, 6]
+operations:
+  brightness:
+    factors: [0.60, 0.80, 1.20, 1.40]
+  contrast:
+    factors: [0.60, 0.80, 1.20, 1.40]
+  saturation:
+    factors: [0.50, 0.75, 1.25, 1.50]
+  gaussian_blur:
+    sigmas: [0.5, 1.0, 2.0, 3.0]
+  crop_resize:
+    side_fractions: [0.70, 0.80, 0.90]
+    anchors: [center, top_left, top_right, bottom_left, bottom_right]
+    interpolation: bicubic
+  jpeg:
+    qualities: [20, 40, 60, 80]
+    subsampling: 0
+    optimize: false
+    progressive: false
+generators:
+  single_max_attempts: 50
+  interaction_max_attempts: 100
+  oracle_count: 500
+repair:
+  attenuation_steps: 20

@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light">
+  <title>EditTrace XAI Controller</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">ET</span>
+      <div><strong>EditTrace</strong><span>Action-level controller</span></div>
+    </div>
+    <div class="mode"><span class="status-dot"></span><span id="model-name">Surrogate model</span><b id="model-mode">DEMO</b></div>
+    <div class="top-actions">
+      <input id="file-input" type="file" accept="image/*" hidden>
+      <button id="dataset-btn" class="quiet">Dataset</button>
+      <button id="upload-btn" class="quiet">Upload image</button>
+      <button id="undo-btn" class="icon-button" title="Undo" aria-label="Undo">↶</button>
+      <button id="reset-btn" class="quiet">Reset history</button>
+      <button id="diagnose-btn" class="primary">Run diagnosis</button>
+    </div>
+  </header>
+
+  <main class="workspace">
+    <aside class="left-rail">
+      <section class="panel-heading">
+        <div><span class="eyebrow">Executable trace</span><h2>History</h2></div>
+        <span id="history-count" class="count">0 / 6</span>
+      </section>
+      <ol id="history-list" class="history-list"></ol>
+      <div id="empty-history" class="empty-history">
+        <span class="trace-glyph">01</span>
+        <p>Add deterministic edits to build a trace.</p>
+      </div>
+      <section class="add-edit">
+        <div id="trace-lock" class="trace-lock" hidden><b>Frozen trace</b><span>Manual edits are locked. Apply only enumerated repairs.</span></div>
+        <div id="manual-edit-controls">
+        <label for="edit-type">Add operation</label>
+        <select id="edit-type">
+          <option value="brightness">Brightness</option>
+          <option value="contrast">Contrast</option>
+          <option value="saturation">Saturation</option>
+          <option value="blur">Gaussian blur</option>
+          <option value="crop">Crop + resize</option>
+          <option value="jpeg">JPEG compression</option>
+        </select>
+        <div id="param-controls"></div>
+        <button id="add-edit-btn" class="secondary">Add to history</button>
+        </div>
+      </section>
+    </aside>
+
+    <section class="stage">
+      <div class="stage-meta">
+        <div>
+          <span id="filename" class="eyebrow">Image</span>
+          <h1 id="stage-title">Current replay</h1>
+        </div>
+        <div class="view-toggle" role="group" aria-label="Image view">
+          <button data-view="source">Source</button>
+          <button data-view="current" class="active">Current</button>
+          <button data-view="compare">Compare</button>
+        </div>
+      </div>
+      <div id="canvas-shell" class="canvas-shell">
+        <div id="image-single" class="image-single"><img id="main-image" alt="Current replay result"></div>
+        <div id="image-compare" class="image-compare" hidden>
+          <figure><img id="compare-source" alt="Source image"><figcaption>Source</figcaption></figure>
+          <figure><img id="compare-current" alt="Edited image"><figcaption>Current</figcaption></figure>
+        </div>
+        <div id="preview-badge" class="preview-badge" hidden>Counterfactual preview</div>
+        <div id="loading" class="loading" hidden><span></span><p>Replaying interventions</p></div>
+      </div>
+      <div class="prediction-strip">
+        <div><span>Target</span><strong id="target-class">—</strong></div>
+        <div><span>Prediction</span><strong id="predicted-class">—</strong></div>
+        <div><span>Target margin</span><strong id="target-margin">—</strong></div>
+        <div><span>Target probability</span><strong id="target-probability">—</strong></div>
+        <div class="decision" id="decision-state"><i></i><span>No trace</span></div>
+      </div>
+    </section>
+
+    <aside class="inspector">
+      <div class="inspector-header">
+        <div><span class="eyebrow">Model-linked evidence</span><h2>Controller</h2></div>
+        <span id="latency" class="latency">—</span>
+      </div>
+      <nav class="tabs" aria-label="Controller views">
+        <button class="active" data-tab="diagnosis">Diagnosis</button>
+        <button data-tab="interactions">Interactions</button>
+        <button data-tab="repair">Repair</button>
+      </nav>
+
+      <section id="tab-diagnosis" class="tab-panel active">
+        <div id="diagnosis-empty" class="inspector-empty">
+          <span class="signal-icon">Δ</span>
+          <h3>No diagnosis yet</h3>
+          <p>Run the controller to rank actions by signed counterfactual effect.</p>
+        </div>
+        <div id="diagnosis-content" hidden>
+          <div id="analysis-scope" class="analysis-scope" hidden></div>
+          <div class="metric-head"><span>Removal effect on target margin</span><b>Δ margin</b></div>
+          <ol id="ranking-list" class="ranking-list"></ol>
+          <p class="method-note">Effect = margin after removal and suffix replay − current margin.</p>
+        </div>
+      </section>
+
+      <section id="tab-interactions" class="tab-panel">
+        <div id="interaction-empty" class="inspector-empty compact"><span class="signal-icon">×</span><h3>No pair analysis</h3><p>Run diagnosis on a trace with at least two actions.</p></div>
+        <div id="interaction-content" hidden>
+          <div class="metric-head"><span>Difference-in-differences</span><b>|effect|</b></div>
+          <ol id="interaction-list" class="interaction-list"></ol>
+          <p class="method-note">All valid pairs are enumerated; pair-only recovery is flagged.</p>
+        </div>
+      </section>
+
+      <section id="tab-repair" class="tab-panel">
+        <div id="repair-empty" class="inspector-empty compact"><span class="signal-icon">↗</span><h3>No feasible repair</h3><p>Repairs appear after diagnosis when the target decision can be recovered.</p></div>
+        <div id="repair-content" hidden>
+          <div class="repair-summary"><div><span>Candidate space</span><strong id="repair-count">0 feasible</strong></div><div><span>Objective</span><strong>Tier → distortion</strong></div></div>
+          <ol id="repair-list" class="repair-list"></ol>
+          <div class="repair-actions"><button id="preview-repair-btn" class="quiet">Preview selected</button><button id="apply-repair-btn" class="primary">Apply repair</button></div>
+          <p class="method-note">Optimal only within the frozen enumerated candidate space.</p>
+        </div>
+      </section>
+      <div id="model-warning" class="demo-warning"><b>Research demo</b><span>Surrogate outputs are workflow checks, not experimental evidence.</span></div>
+    </aside>
+  </main>
+  <div id="dataset-modal" class="modal-backdrop" hidden>
+    <section class="dataset-modal" role="dialog" aria-modal="true" aria-labelledby="dataset-title">
+      <header><div><span class="eyebrow">Frozen evaluation inputs</span><h2 id="dataset-title">Trace catalog</h2></div><button id="dataset-close" class="icon-button" aria-label="Close dataset browser">×</button></header>
+      <div id="dataset-status" class="dataset-status"></div>
+      <div class="dataset-tools"><input id="trace-search" type="search" placeholder="Search trace ID or source image"><button id="dataset-refresh" class="quiet">Refresh</button></div>
+      <div class="trace-table-head"><span>Trace / source</span><span>Protocol</span></div>
+      <ol id="trace-catalog" class="trace-catalog"></ol>
+      <p class="dataset-footnote">Only traces whose source image is present can be opened. Diagnosis additionally requires a correct ImageNet source prediction.</p>
+    </section>
+  </div>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <script src="/app.js" defer></script>
+</body>
+</html>

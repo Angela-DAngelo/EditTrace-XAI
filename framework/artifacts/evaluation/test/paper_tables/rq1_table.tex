@@ -1,0 +1,23 @@
+\begin{table}[t]
+\centering
+\caption{RQ1 development results. Replace development with held-out results for the paper.}
+\label{tab:rq1}
+\begin{tabular}{llll}
+\toprule
+Model & Method & Top-1 (95\% CI) & MRR (95\% CI) \\
+\midrule
+ResNet-50 & adjacent\_score\_change & 0.915 [0.892, 0.937] & 0.951 [0.938, 0.964] \\
+ResNet-50 & counterfactual\_replay & 1.000 [1.000, 1.000] & 1.000 [1.000, 1.000] \\
+ResNet-50 & edit\_magnitude & 0.448 [0.408, 0.488] & 0.680 [0.656, 0.705] \\
+ResNet-50 & integrated\_gradients\_support & 0.278 [0.243, 0.313] & 0.509 [0.484, 0.535] \\
+ResNet-50 & last\_action & 0.256 [0.221, 0.291] & 0.522 [0.498, 0.546] \\
+ResNet-50 & random & 0.213 [0.180, 0.246] & 0.486 [0.463, 0.509] \\
+ViT-B/16 & adjacent\_score\_change & 0.929 [0.908, 0.948] & 0.960 [0.948, 0.971] \\
+ViT-B/16 & counterfactual\_replay & 1.000 [1.000, 1.000] & 1.000 [1.000, 1.000] \\
+ViT-B/16 & edit\_magnitude & 0.431 [0.393, 0.470] & 0.661 [0.637, 0.685] \\
+ViT-B/16 & integrated\_gradients\_support & 0.246 [0.212, 0.279] & 0.477 [0.452, 0.502] \\
+ViT-B/16 & last\_action & 0.231 [0.199, 0.265] & 0.505 [0.482, 0.528] \\
+ViT-B/16 & random & 0.278 [0.244, 0.313] & 0.526 [0.502, 0.550] \\
+\bottomrule
+\end{tabular}
+\end{table}

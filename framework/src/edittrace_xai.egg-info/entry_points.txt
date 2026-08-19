@@ -1,0 +1,2 @@
+[console_scripts]
+edittrace = edittrace_xai.cli:main

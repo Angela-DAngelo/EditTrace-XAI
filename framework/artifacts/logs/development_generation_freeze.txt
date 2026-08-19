@@ -1,0 +1,33 @@
+=== TRACE FILES ===
+-rw-rw-r-- 1 dange dange 1017K Aug  1 21:53 artifacts/traces/resnet50_B-Interaction_dev_outcomes.jsonl
+-rw-rw-r-- 1 dange dange  2.3M Aug  1 16:21 artifacts/traces/resnet50_b_natural_dev.jsonl
+-rw-rw-r-- 1 dange dange  2.3M Aug  2 13:04 artifacts/traces/resnet50_b_oracle_dev.jsonl
+-rw-rw-r-- 1 dange dange  871K Aug  1 17:48 artifacts/traces/resnet50_B-Single_dev_outcomes.jsonl
+-rw-rw-r-- 1 dange dange  921K Aug  2 12:21 artifacts/traces/vit_b_16_B-Interaction_dev_outcomes.jsonl
+-rw-rw-r-- 1 dange dange  2.3M Aug  1 16:21 artifacts/traces/vit_b_16_b_natural_dev.jsonl
+-rw-rw-r-- 1 dange dange  2.3M Aug  2 13:05 artifacts/traces/vit_b_16_b_oracle_dev.jsonl
+-rw-rw-r-- 1 dange dange  828K Aug  2 00:38 artifacts/traces/vit_b_16_B-Single_dev_outcomes.jsonl
+
+=== LINE COUNTS ===
+     500 artifacts/traces/resnet50_B-Interaction_dev_outcomes.jsonl
+     500 artifacts/traces/resnet50_b_natural_dev.jsonl
+     500 artifacts/traces/resnet50_b_oracle_dev.jsonl
+     500 artifacts/traces/resnet50_B-Single_dev_outcomes.jsonl
+     500 artifacts/traces/vit_b_16_B-Interaction_dev_outcomes.jsonl
+     500 artifacts/traces/vit_b_16_b_natural_dev.jsonl
+     500 artifacts/traces/vit_b_16_b_oracle_dev.jsonl
+     500 artifacts/traces/vit_b_16_B-Single_dev_outcomes.jsonl
+    4000 total
+
+=== SHA256 ===
+c2406743a8e48451dc868597080e074bfa6ada659b7eba5cb89a5c82eb6a5ada  artifacts/manifests/imagenet_val.jsonl
+947bfd18fe914e5ae7baccbd5c9a3b98058c03440df9d7b5cb12365bb3e23f6c  artifacts/manifests/resnet50_eligible.jsonl
+7a11ee07374050a2bfd6f40c3c267c8c39e114f87fcf8fbca1715087f5a4c89f  artifacts/manifests/vit_b_16_eligible.jsonl
+a66ce61b213dc419f39870ebaee4caf8f96d9279c4d151924f3a1a110829f5b6  artifacts/traces/resnet50_B-Interaction_dev_outcomes.jsonl
+796e6c5704d9a17af722cf88c5c00afc47e4dc39ebe8357f45385c20b3e2d416  artifacts/traces/resnet50_b_natural_dev.jsonl
+f375ae6c39c49769a3dd34a891e5fd8c9a8323497cb65178316b5ddcdaafd955  artifacts/traces/resnet50_b_oracle_dev.jsonl
+f056cd8eccbaa71702875af148f3d70523695afa5f51fc8aba4f0515427e4a6a  artifacts/traces/resnet50_B-Single_dev_outcomes.jsonl
+d1dd58c42617b8c16859890789e00b859d508fb42663328118f1a177fed615f5  artifacts/traces/vit_b_16_B-Interaction_dev_outcomes.jsonl
+c38b965894fb6c89c0e9f7b97e48970d3f5374f953e38428de8321c205be54e5  artifacts/traces/vit_b_16_b_natural_dev.jsonl
+d1921b3636b561a36eb04237a43ffd4c0d6772cc03d56c9df2a65b26dad864b3  artifacts/traces/vit_b_16_b_oracle_dev.jsonl
+e79b722b8d3ee80334f6faae1ef256201d2df0e3b45e85e52beba9274c850660  artifacts/traces/vit_b_16_B-Single_dev_outcomes.jsonl

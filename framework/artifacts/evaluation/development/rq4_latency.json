@@ -1,0 +1,840 @@
+{
+  "groups": [
+    {
+      "component": "diagnosis",
+      "history_length": 3,
+      "latency_ms": {
+        "available": true,
+        "max": 292.317196,
+        "mean": 124.33389060416665,
+        "median": 120.9894945,
+        "min": 89.567205,
+        "n": 48,
+        "p05": 106.32432305,
+        "p95": 142.3653165
+      },
+      "method": "counterfactual_replay",
+      "model": "torchvision:resnet50:IMAGENET1K_V2",
+      "model_calls": {
+        "available": true,
+        "max": 4.0,
+        "mean": 4.0,
+        "median": 4.0,
+        "min": 4.0,
+        "n": 48,
+        "p05": 4.0,
+        "p95": 4.0
+      },
+      "n": 48
+    },
+    {
+      "component": "diagnosis",
+      "history_length": 4,
+      "latency_ms": {
+        "available": true,
+        "max": 380.732812,
+        "mean": 169.76374792307692,
+        "median": 164.406263,
+        "min": 126.936371,
+        "n": 39,
+        "p05": 143.3979121,
+        "p95": 215.22281840000002
+      },
+      "method": "counterfactual_replay",
+      "model": "torchvision:resnet50:IMAGENET1K_V2",
+      "model_calls": {
+        "available": true,
+        "max": 5.0,
+        "mean": 5.0,
+        "median": 5.0,
+        "min": 5.0,
+        "n": 39,
+        "p05": 5.0,
+        "p95": 5.0
+      },
+      "n": 39
+    },
+    {
+      "component": "diagnosis",
+      "history_length": 5,
+      "latency_ms": {
+        "available": true,
+        "max": 236.303497,
+        "mean": 199.5519321891892,
+        "median": 202.805548,
+        "min": 170.006847,
+        "n": 37,
+        "p05": 172.05385099999998,
+        "p95": 218.4022742
+      },
+      "method": "counterfactual_replay",
+      "model": "torchvision:resnet50:IMAGENET1K_V2",
+      "model_calls": {
+        "available": true,
+        "max": 6.0,
+        "mean": 6.0,
+        "median": 6.0,
+        "min": 6.0,
+        "n": 37,
+        "p05": 6.0,
+        "p95": 6.0
+      },
+      "n": 37
+    },
+    {
+      "component": "diagnosis",
+      "history_length": 6,
+      "latency_ms": {
+        "available": true,
+        "max": 328.304209,
+        "mean": 258.4807752352941,
+        "median": 256.60652949999997,
+        "min": 181.52005,
+        "n": 34,
+        "p05": 231.13470915,
+        "p95": 300.13696984999996
+      },
+      "method": "counterfactual_replay",
+      "model": "torchvision:resnet50:IMAGENET1K_V2",
+      "model_calls": {
+        "available": true,
+        "max": 7.0,
+        "mean": 7.0,
+        "median": 7.0,
+        "min": 7.0,
+        "n": 34,
+        "p05": 7.0,
+        "p95": 7.0
+      },
+      "n": 34
+    },
+    {
+      "component": "diagnosis",
+      "history_length": null,
+      "latency_ms": {
+        "available": true,
+        "max": 380.732812,
+        "mean": 182.02899219620252,
+        "median": 172.5138565,
+        "min": 89.567205,
+        "n": 158,
+        "p05": 110.67781314999999,
+        "p95": 273.25243224999997
+      },
+      "method": "counterfactual_replay",
+      "model": "torchvision:resnet50:IMAGENET1K_V2",
+      "model_calls": {
+        "available": true,
+        "max": 7.0,
+        "mean": 5.360759493670886,
+        "median": 5.0,
+        "min": 4.0,
+        "n": 158,
+        "p05": 4.0,
+        "p95": 7.0
+      },
+      "n": 158
+    },
+    {
+      "component": "diagnosis",
+      "history_length": 3,
+      "latency_ms": {
+        "available": true,
+        "max": 270.175852,
+        "mean": 227.3290909,
+        "median": 223.845581,
+        "min": 199.032033,
+        "n": 50,
+        "p05": 210.5538597,
+        "p95": 259.9747222
+      },
+      "method": "counterfactual_replay",
+      "model": "torchvision:vit_b_16:IMAGENET1K_V1",
+      "model_calls": {
+        "available": true,
+        "max": 4.0,
+        "mean": 4.0,
+        "median": 4.0,
+        "min": 4.0,
+        "n": 50,
+        "p05": 4.0,
+        "p95": 4.0
+      },
+      "n": 50
+    },
+    {
+      "component": "diagnosis",
+      "history_length": 4,
+      "latency_ms": {
+        "available": true,
+        "max": 495.217999,
+        "mean": 302.55517747169813,
+        "median": 292.779052,
+        "min": 261.039217,
+        "n": 53,
+        "p05": 265.2220294,
+        "p95": 364.4826662
+      },
+      "method": "counterfactual_replay",
+      "model": "torchvision:vit_b_16:IMAGENET1K_V1",
+      "model_calls": {
+        "available": true,
+        "max": 5.0,
+        "mean": 5.0,
+        "median": 5.0,
+        "min": 5.0,
+        "n": 53,
+        "p05": 5.0,
+        "p95": 5.0
+      },
+      "n": 53
+    },
+    {
+      "component": "diagnosis",
+      "history_length": 5,
+      "latency_ms": {
+        "available": true,
+        "max": 479.807838,
+        "mean": 365.761439,
+        "median": 352.772005,
+        "min": 318.123901,
+        "n": 31,
+        "p05": 325.717077,
+        "p95": 427.69893449999995
+      },
+      "method": "counterfactual_replay",
+      "model": "torchvision:vit_b_16:IMAGENET1K_V1",
+      "model_calls": {
+        "available": true,
+        "max": 6.0,
+        "mean": 6.0,
+        "median": 6.0,
+        "min": 6.0,
+        "n": 31,
+        "p05": 6.0,
+        "p95": 6.0
+      },
+      "n": 31
+    },
+    {
+      "component": "diagnosis",
+      "history_length": 6,
+      "latency_ms": {
+        "available": true,
+        "max": 554.722963,
+        "mean": 456.6076019545455,
+        "median": 442.5604995,
+        "min": 404.019428,
+        "n": 22,
+        "p05": 418.30477595,
+        "p95": 515.2393807
+      },
+      "method": "counterfactual_replay",
+      "model": "torchvision:vit_b_16:IMAGENET1K_V1",
+      "model_calls": {
+        "available": true,
+        "max": 7.0,
+        "mean": 7.0,
+        "median": 7.0,
+        "min": 7.0,
+        "n": 22,
+        "p05": 7.0,
+        "p95": 7.0
+      },
+      "n": 22
+    },
+    {
+      "component": "diagnosis",
+      "history_length": null,
+      "latency_ms": {
+        "available": true,
+        "max": 554.722963,
+        "mean": 312.7298128397436,
+        "median": 293.3531935,
+        "min": 199.032033,
+        "n": 156,
+        "p05": 215.84022549999997,
+        "p95": 477.807702
+      },
+      "method": "counterfactual_replay",
+      "model": "torchvision:vit_b_16:IMAGENET1K_V1",
+      "model_calls": {
+        "available": true,
+        "max": 7.0,
+        "mean": 5.160256410256411,
+        "median": 5.0,
+        "min": 4.0,
+        "n": 156,
+        "p05": 4.0,
+        "p95": 7.0
+      },
+      "n": 156
+    },
+    {
+      "component": "interaction",
+      "history_length": 3,
+      "latency_ms": {
+        "available": true,
+        "max": 236.538741,
+        "mean": 216.22110240740741,
+        "median": 219.796875,
+        "min": 187.868051,
+        "n": 27,
+        "p05": 196.2769083,
+        "p95": 234.2843638
+      },
+      "method": "difference_in_differences",
+      "model": "torchvision:resnet50:IMAGENET1K_V2",
+      "model_calls": {
+        "available": true,
+        "max": 7.0,
+        "mean": 7.0,
+        "median": 7.0,
+        "min": 7.0,
+        "n": 27,
+        "p05": 7.0,
+        "p95": 7.0
+      },
+      "n": 27
+    },
+    {
+      "component": "interaction",
+      "history_length": 4,
+      "latency_ms": {
+        "available": true,
+        "max": 386.981048,
+        "mean": 354.2333941176471,
+        "median": 355.3179755,
+        "min": 273.511577,
+        "n": 34,
+        "p05": 319.7433807,
+        "p95": 383.3942952
+      },
+      "method": "difference_in_differences",
+      "model": "torchvision:resnet50:IMAGENET1K_V2",
+      "model_calls": {
+        "available": true,
+        "max": 11.0,
+        "mean": 11.0,
+        "median": 11.0,
+        "min": 11.0,
+        "n": 34,
+        "p05": 11.0,
+        "p95": 11.0
+      },
+      "n": 34
+    },
+    {
+      "component": "interaction",
+      "history_length": 5,
+      "latency_ms": {
+        "available": true,
+        "max": 657.58604,
+        "mean": 524.0421193571428,
+        "median": 523.4953755,
+        "min": 421.201602,
+        "n": 42,
+        "p05": 460.38719679999997,
+        "p95": 584.9052902499999
+      },
+      "method": "difference_in_differences",
+      "model": "torchvision:resnet50:IMAGENET1K_V2",
+      "model_calls": {
+        "available": true,
+        "max": 16.0,
+        "mean": 16.0,
+        "median": 16.0,
+        "min": 16.0,
+        "n": 42,
+        "p05": 16.0,
+        "p95": 16.0
+      },
+      "n": 42
+    },
+    {
+      "component": "interaction",
+      "history_length": 6,
+      "latency_ms": {
+        "available": true,
+        "max": 2617.222465,
+        "mean": 818.9471153275862,
+        "median": 796.8770315,
+        "min": 554.433519,
+        "n": 58,
+        "p05": 682.07362555,
+        "p95": 928.3749352000001
+      },
+      "method": "difference_in_differences",
+      "model": "torchvision:resnet50:IMAGENET1K_V2",
+      "model_calls": {
+        "available": true,
+        "max": 22.0,
+        "mean": 22.0,
+        "median": 22.0,
+        "min": 22.0,
+        "n": 58,
+        "p05": 22.0,
+        "p95": 22.0
+      },
+      "n": 58
+    },
+    {
+      "component": "interaction",
+      "history_length": null,
+      "latency_ms": {
+        "available": true,
+        "max": 2617.222465,
+        "mean": 542.798800416149,
+        "median": 515.610432,
+        "min": 187.868051,
+        "n": 161,
+        "p05": 206.150213,
+        "p95": 853.906589
+      },
+      "method": "difference_in_differences",
+      "model": "torchvision:resnet50:IMAGENET1K_V2",
+      "model_calls": {
+        "available": true,
+        "max": 22.0,
+        "mean": 15.596273291925465,
+        "median": 16.0,
+        "min": 7.0,
+        "n": 161,
+        "p05": 7.0,
+        "p95": 22.0
+      },
+      "n": 161
+    },
+    {
+      "component": "interaction",
+      "history_length": 3,
+      "latency_ms": {
+        "available": true,
+        "max": 480.206459,
+        "mean": 399.4657258125,
+        "median": 390.7968565,
+        "min": 354.651078,
+        "n": 16,
+        "p05": 357.01501725,
+        "p95": 455.266433
+      },
+      "method": "difference_in_differences",
+      "model": "torchvision:vit_b_16:IMAGENET1K_V1",
+      "model_calls": {
+        "available": true,
+        "max": 7.0,
+        "mean": 7.0,
+        "median": 7.0,
+        "min": 7.0,
+        "n": 16,
+        "p05": 7.0,
+        "p95": 7.0
+      },
+      "n": 16
+    },
+    {
+      "component": "interaction",
+      "history_length": 4,
+      "latency_ms": {
+        "available": true,
+        "max": 801.087536,
+        "mean": 645.4935027948718,
+        "median": 635.801401,
+        "min": 561.608455,
+        "n": 39,
+        "p05": 574.2850818000001,
+        "p95": 728.5775656
+      },
+      "method": "difference_in_differences",
+      "model": "torchvision:vit_b_16:IMAGENET1K_V1",
+      "model_calls": {
+        "available": true,
+        "max": 11.0,
+        "mean": 11.0,
+        "median": 11.0,
+        "min": 11.0,
+        "n": 39,
+        "p05": 11.0,
+        "p95": 11.0
+      },
+      "n": 39
+    },
+    {
+      "component": "interaction",
+      "history_length": 5,
+      "latency_ms": {
+        "available": true,
+        "max": 1274.32322,
+        "mean": 978.714360325,
+        "median": 936.8909165,
+        "min": 764.056289,
+        "n": 40,
+        "p05": 882.3524865,
+        "p95": 1116.4361245499995
+      },
+      "method": "difference_in_differences",
+      "model": "torchvision:vit_b_16:IMAGENET1K_V1",
+      "model_calls": {
+        "available": true,
+        "max": 16.0,
+        "mean": 16.0,
+        "median": 16.0,
+        "min": 16.0,
+        "n": 40,
+        "p05": 16.0,
+        "p95": 16.0
+      },
+      "n": 40
+    },
+    {
+      "component": "interaction",
+      "history_length": 6,
+      "latency_ms": {
+        "available": true,
+        "max": 1723.838413,
+        "mean": 1411.5865520612247,
+        "median": 1389.067047,
+        "min": 1203.693623,
+        "n": 49,
+        "p05": 1249.5647566,
+        "p95": 1601.5336734
+      },
+      "method": "difference_in_differences",
+      "model": "torchvision:vit_b_16:IMAGENET1K_V1",
+      "model_calls": {
+        "available": true,
+        "max": 22.0,
+        "mean": 22.0,
+        "median": 22.0,
+        "min": 22.0,
+        "n": 49,
+        "p05": 22.0,
+        "p95": 22.0
+      },
+      "n": 49
+    },
+    {
+      "component": "interaction",
+      "history_length": null,
+      "latency_ms": {
+        "available": true,
+        "max": 1723.838413,
+        "mean": 971.4028728194444,
+        "median": 933.0554255,
+        "min": 354.651078,
+        "n": 144,
+        "p05": 387.07500375,
+        "p95": 1547.89661325
+      },
+      "method": "difference_in_differences",
+      "model": "torchvision:vit_b_16:IMAGENET1K_V1",
+      "model_calls": {
+        "available": true,
+        "max": 22.0,
+        "mean": 15.6875,
+        "median": 16.0,
+        "min": 7.0,
+        "n": 144,
+        "p05": 7.0,
+        "p95": 22.0
+      },
+      "n": 144
+    },
+    {
+      "component": "repair",
+      "history_length": 3,
+      "latency_ms": {
+        "available": true,
+        "max": 2416.766403,
+        "mean": 636.239142111111,
+        "median": 128.842159,
+        "min": 113.969461,
+        "n": 9,
+        "p05": 116.2632026,
+        "p95": 2416.0497042
+      },
+      "method": "constrained_repair",
+      "model": "torchvision:resnet50:IMAGENET1K_V2",
+      "model_calls": {
+        "available": true,
+        "max": 66.0,
+        "mean": 16.666666666666668,
+        "median": 3.0,
+        "min": 3.0,
+        "n": 9,
+        "p05": 3.0,
+        "p95": 64.80000000000001
+      },
+      "n": 9
+    },
+    {
+      "component": "repair",
+      "history_length": 4,
+      "latency_ms": {
+        "available": true,
+        "max": 3459.084154,
+        "mean": 771.3008274375,
+        "median": 195.847103,
+        "min": 155.039552,
+        "n": 16,
+        "p05": 157.32491225,
+        "p95": 3351.0374094999997
+      },
+      "method": "constrained_repair",
+      "model": "torchvision:resnet50:IMAGENET1K_V2",
+      "model_calls": {
+        "available": true,
+        "max": 90.0,
+        "mean": 19.75,
+        "median": 4.0,
+        "min": 4.0,
+        "n": 16,
+        "p05": 4.0,
+        "p95": 90.0
+      },
+      "n": 16
+    },
+    {
+      "component": "repair",
+      "history_length": 5,
+      "latency_ms": {
+        "available": true,
+        "max": 4710.367201,
+        "mean": 1010.8422996666666,
+        "median": 229.482332,
+        "min": 140.542298,
+        "n": 21,
+        "p05": 182.144572,
+        "p95": 4278.640517
+      },
+      "method": "constrained_repair",
+      "model": "torchvision:resnet50:IMAGENET1K_V2",
+      "model_calls": {
+        "available": true,
+        "max": 115.0,
+        "mean": 25.476190476190474,
+        "median": 5.0,
+        "min": 5.0,
+        "n": 21,
+        "p05": 5.0,
+        "p95": 115.0
+      },
+      "n": 21
+    },
+    {
+      "component": "repair",
+      "history_length": 6,
+      "latency_ms": {
+        "available": true,
+        "max": 5459.694511,
+        "mean": 995.2385922,
+        "median": 298.134742,
+        "min": 185.846916,
+        "n": 35,
+        "p05": 226.9002853,
+        "p95": 5224.106441999999
+      },
+      "method": "constrained_repair",
+      "model": "torchvision:resnet50:IMAGENET1K_V2",
+      "model_calls": {
+        "available": true,
+        "max": 141.0,
+        "mean": 23.571428571428573,
+        "median": 6.0,
+        "min": 6.0,
+        "n": 35,
+        "p05": 6.0,
+        "p95": 126.0
+      },
+      "n": 35
+    },
+    {
+      "component": "repair",
+      "history_length": null,
+      "latency_ms": {
+        "available": true,
+        "max": 5459.694511,
+        "mean": 915.1605498518518,
+        "median": 250.208098,
+        "min": 113.969461,
+        "n": 81,
+        "p05": 128.842159,
+        "p95": 4966.305415
+      },
+      "method": "constrained_repair",
+      "model": "torchvision:resnet50:IMAGENET1K_V2",
+      "model_calls": {
+        "available": true,
+        "max": 141.0,
+        "mean": 22.54320987654321,
+        "median": 6.0,
+        "min": 3.0,
+        "n": 81,
+        "p05": 3.0,
+        "p95": 126.0
+      },
+      "n": 81
+    },
+    {
+      "component": "repair",
+      "history_length": 3,
+      "latency_ms": {
+        "available": true,
+        "max": 4810.739485,
+        "mean": 1137.631196142857,
+        "median": 237.783488,
+        "min": 179.053821,
+        "n": 14,
+        "p05": 186.89649285000002,
+        "p95": 4651.13859355
+      },
+      "method": "constrained_repair",
+      "model": "torchvision:vit_b_16:IMAGENET1K_V1",
+      "model_calls": {
+        "available": true,
+        "max": 66.0,
+        "mean": 16.5,
+        "median": 3.0,
+        "min": 3.0,
+        "n": 14,
+        "p05": 3.0,
+        "p95": 66.0
+      },
+      "n": 14
+    },
+    {
+      "component": "repair",
+      "history_length": 4,
+      "latency_ms": {
+        "available": true,
+        "max": 5366.966469,
+        "mean": 595.1017967222222,
+        "median": 306.2586225,
+        "min": 286.550587,
+        "n": 18,
+        "p05": 289.1284738,
+        "p95": 1145.062529649993
+      },
+      "method": "constrained_repair",
+      "model": "torchvision:vit_b_16:IMAGENET1K_V1",
+      "model_calls": {
+        "available": true,
+        "max": 84.0,
+        "mean": 8.444444444444445,
+        "median": 4.0,
+        "min": 4.0,
+        "n": 18,
+        "p05": 4.0,
+        "p95": 15.999999999999886
+      },
+      "n": 18
+    },
+    {
+      "component": "repair",
+      "history_length": 5,
+      "latency_ms": {
+        "available": true,
+        "max": 8264.8414,
+        "mean": 1234.43460964,
+        "median": 383.285925,
+        "min": 326.552775,
+        "n": 25,
+        "p05": 358.7306442,
+        "p95": 7315.941980999997
+      },
+      "method": "constrained_repair",
+      "model": "torchvision:vit_b_16:IMAGENET1K_V1",
+      "model_calls": {
+        "available": true,
+        "max": 115.0,
+        "mean": 17.4,
+        "median": 5.0,
+        "min": 5.0,
+        "n": 25,
+        "p05": 5.0,
+        "p95": 105.0
+      },
+      "n": 25
+    },
+    {
+      "component": "repair",
+      "history_length": 6,
+      "latency_ms": {
+        "available": true,
+        "max": 10184.133766,
+        "mean": 2006.9519347058822,
+        "median": 462.033633,
+        "min": 398.547955,
+        "n": 17,
+        "p05": 434.2922518,
+        "p95": 9661.738929199999
+      },
+      "method": "constrained_repair",
+      "model": "torchvision:vit_b_16:IMAGENET1K_V1",
+      "model_calls": {
+        "available": true,
+        "max": 141.0,
+        "mean": 28.058823529411764,
+        "median": 6.0,
+        "min": 6.0,
+        "n": 17,
+        "p05": 6.0,
+        "p95": 129.0
+      },
+      "n": 17
+    },
+    {
+      "component": "repair",
+      "history_length": null,
+      "latency_ms": {
+        "available": true,
+        "max": 10184.133766,
+        "mean": 1238.0772597027028,
+        "median": 376.229107,
+        "min": 179.053821,
+        "n": 74,
+        "p05": 221.61790735,
+        "p95": 7487.02356805
+      },
+      "method": "constrained_repair",
+      "model": "torchvision:vit_b_16:IMAGENET1K_V1",
+      "model_calls": {
+        "available": true,
+        "max": 141.0,
+        "mean": 17.5,
+        "median": 5.0,
+        "min": 3.0,
+        "n": 74,
+        "p05": 3.0,
+        "p95": 108.49999999999994
+      },
+      "n": 74
+    }
+  ],
+  "hardware": {
+    "cuda_available": false,
+    "cuda_version": "13.0",
+    "cudnn_version": null,
+    "gpu": null,
+    "platform": "Linux-5.15.0-173-generic-x86_64-with-glibc2.35",
+    "processor": "x86_64",
+    "python": "3.11.15",
+    "torch": "2.13.0+cu130"
+  },
+  "inputs": [
+    "/home/dange/EditTrace/edittrace-xai_v0.3/artifacts/evaluation/development/rq1_resnet50_per_trace.jsonl",
+    "/home/dange/EditTrace/edittrace-xai_v0.3/artifacts/evaluation/development/rq1_vit_b_16_per_trace.jsonl",
+    "/home/dange/EditTrace/edittrace-xai_v0.3/artifacts/evaluation/development/rq2_resnet50_per_trace.jsonl",
+    "/home/dange/EditTrace/edittrace-xai_v0.3/artifacts/evaluation/development/rq2_vit_b_16_per_trace.jsonl",
+    "/home/dange/EditTrace/edittrace-xai_v0.3/artifacts/evaluation/development/rq3_resnet50_natural_per_trace.jsonl",
+    "/home/dange/EditTrace/edittrace-xai_v0.3/artifacts/evaluation/development/rq3_vit_b_16_natural_per_trace.jsonl"
+  ],
+  "rq": "RQ4",
+  "schema_version": "1.0",
+  "timing_contract": {
+    "gpu_synchronization": true,
+    "model_initialization_excluded": true,
+    "repair_source_and_final_state_assumed_cached": true,
+    "warmup_excluded": true
+  }
+}

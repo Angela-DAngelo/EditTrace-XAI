@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: edittrace-xai
+Version: 0.3.0
+Summary: Deterministic executable edit histories for action-level XAI research
+Requires-Python: >=3.11
+Requires-Dist: numpy<3,>=2.0
+Requires-Dist: Pillow<13,>=11
+Requires-Dist: pydantic<3,>=2.10
+Requires-Dist: PyYAML<7,>=6
+Provides-Extra: torch
+Requires-Dist: torch>=2.4; extra == "torch"
+Requires-Dist: torchvision>=0.19; extra == "torch"
+Provides-Extra: evaluation
+Requires-Dist: lpips<1,>=0.1.4; extra == "evaluation"
+Requires-Dist: scikit-image<1,>=0.24; extra == "evaluation"

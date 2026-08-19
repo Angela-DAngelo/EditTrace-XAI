@@ -1,0 +1,266 @@
+{
+  "accepted_traces": 601,
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 20260802,
+  "config": "/home/dange/EditTrace/edittrace-xai_v0.3/configs/development.yaml",
+  "config_sha256": "43de78ab8234a8bbc2c9cdc2cd17d3ff3fce271363afcaca66fca3c30333cafa",
+  "errors": [],
+  "ig_steps": 32,
+  "include_ig": true,
+  "input": "/home/dange/EditTrace/edittrace-xai_v0.3/artifacts/traces/resnet50_B-Single_test_outcomes.jsonl",
+  "input_sha256": "e38047bc4b8431079bbcabf782adbbeeba4504cd903885eb3e7c35d7b4ae901a",
+  "model": "torchvision:resnet50:IMAGENET1K_V2",
+  "random_baseline_seed": 20260802,
+  "results": {
+    "methods": {
+      "adjacent_score_change": {
+        "mean_latency_ms": 138.4776484359401,
+        "mrr": {
+          "available": true,
+          "ci95_high": 0.9638103161397671,
+          "ci95_low": 0.937603993344426,
+          "estimate": 0.9509706045479756,
+          "n_clusters": 601,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "top1": {
+          "available": true,
+          "ci95_high": 0.9367720465890182,
+          "ci95_low": 0.891846921797005,
+          "estimate": 0.9151414309484193,
+          "n_clusters": 601,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "total_model_calls": 3178
+      },
+      "counterfactual_replay": {
+        "mean_latency_ms": 184.17729624625625,
+        "mrr": {
+          "available": true,
+          "ci95_high": 1.0,
+          "ci95_low": 1.0,
+          "estimate": 1.0,
+          "n_clusters": 601,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "top1": {
+          "available": true,
+          "ci95_high": 1.0,
+          "ci95_low": 1.0,
+          "estimate": 1.0,
+          "n_clusters": 601,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "total_model_calls": 3178
+      },
+      "edit_magnitude": {
+        "mean_latency_ms": 0.033759535773710485,
+        "mrr": {
+          "available": true,
+          "ci95_high": 0.704576400443705,
+          "ci95_low": 0.6561279811425402,
+          "estimate": 0.6803105934553522,
+          "n_clusters": 601,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "top1": {
+          "available": true,
+          "ci95_high": 0.48756239600665496,
+          "ci95_low": 0.40765391014975044,
+          "estimate": 0.4475873544093178,
+          "n_clusters": 601,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "total_model_calls": 0
+      },
+      "integrated_gradients_support": {
+        "mean_latency_ms": 2405.3208741846925,
+        "mrr": {
+          "available": true,
+          "ci95_high": 0.5345812534664448,
+          "ci95_low": 0.4836931503050471,
+          "estimate": 0.5090682196339436,
+          "n_clusters": 601,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "top1": {
+          "available": true,
+          "ci95_high": 0.31281198003327787,
+          "ci95_low": 0.24292845257903495,
+          "estimate": 0.2778702163061564,
+          "n_clusters": 601,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "total_model_calls": 19232
+      },
+      "last_action": {
+        "mean_latency_ms": 0.0035158968386023296,
+        "mrr": {
+          "available": true,
+          "ci95_high": 0.5455352190793122,
+          "ci95_low": 0.4978639767054908,
+          "estimate": 0.521769273433167,
+          "n_clusters": 601,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "top1": {
+          "available": true,
+          "ci95_high": 0.2911813643926789,
+          "ci95_low": 0.22129783693843594,
+          "estimate": 0.2562396006655574,
+          "n_clusters": 601,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "total_model_calls": 0
+      },
+      "random": {
+        "mean_latency_ms": 0.13399243926788684,
+        "mrr": {
+          "available": true,
+          "ci95_high": 0.5090689129229062,
+          "ci95_low": 0.462811286744315,
+          "estimate": 0.4857182473655019,
+          "n_clusters": 601,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "top1": {
+          "available": true,
+          "ci95_high": 0.24625623960066556,
+          "ci95_low": 0.17970049916805325,
+          "estimate": 0.2129783693843594,
+          "n_clusters": 601,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "total_model_calls": 0
+      }
+    },
+    "paired_differences": [
+      {
+        "available": true,
+        "baseline": "adjacent_score_change",
+        "ci95_high": 0.10815307820299501,
+        "ci95_low": 0.0632279534109817,
+        "estimate": 0.08485856905158069,
+        "method": "counterfactual_replay",
+        "n_clusters": 601,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      {
+        "available": true,
+        "baseline": "adjacent_score_change",
+        "ci95_high": 0.06239600665557404,
+        "ci95_low": 0.03618968386023295,
+        "estimate": 0.049029395452024414,
+        "method": "counterfactual_replay",
+        "n_clusters": 601,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      {
+        "available": true,
+        "baseline": "edit_magnitude",
+        "ci95_high": 0.5923460898502496,
+        "ci95_low": 0.5124376039933445,
+        "estimate": 0.5524126455906821,
+        "method": "counterfactual_replay",
+        "n_clusters": 601,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      {
+        "available": true,
+        "baseline": "edit_magnitude",
+        "ci95_high": 0.3438720188574598,
+        "ci95_low": 0.29542359955629505,
+        "estimate": 0.31968940654464784,
+        "method": "counterfactual_replay",
+        "n_clusters": 601,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      {
+        "available": true,
+        "baseline": "integrated_gradients_support",
+        "ci95_high": 0.757071547420965,
+        "ci95_low": 0.6871880199667221,
+        "estimate": 0.7221297836938436,
+        "method": "counterfactual_replay",
+        "n_clusters": 601,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      {
+        "available": true,
+        "baseline": "integrated_gradients_support",
+        "ci95_high": 0.5163068496949529,
+        "ci95_low": 0.46541874653355525,
+        "estimate": 0.4909317803660566,
+        "method": "counterfactual_replay",
+        "n_clusters": 601,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      {
+        "available": true,
+        "baseline": "last_action",
+        "ci95_high": 0.778702163061564,
+        "ci95_low": 0.7088186356073212,
+        "estimate": 0.7437603993344426,
+        "method": "counterfactual_replay",
+        "n_clusters": 601,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      {
+        "available": true,
+        "baseline": "last_action",
+        "ci95_high": 0.5021360232945091,
+        "ci95_low": 0.4544647809206877,
+        "estimate": 0.478230726566833,
+        "method": "counterfactual_replay",
+        "n_clusters": 601,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      {
+        "available": true,
+        "baseline": "random",
+        "ci95_high": 0.8202995008319468,
+        "ci95_low": 0.7537437603993344,
+        "estimate": 0.7870216306156406,
+        "method": "counterfactual_replay",
+        "n_clusters": 601,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      {
+        "available": true,
+        "baseline": "random",
+        "ci95_high": 0.537188713255685,
+        "ci95_low": 0.49093108707709376,
+        "estimate": 0.5142817526344982,
+        "method": "counterfactual_replay",
+        "n_clusters": 601,
+        "resamples": 10000,
+        "seed": 20260802
+      }
+    ]
+  },
+  "rq": "RQ1",
+  "schema_version": "1.0",
+  "scope": "evaluation",
+  "warmup_iterations": 10
+}

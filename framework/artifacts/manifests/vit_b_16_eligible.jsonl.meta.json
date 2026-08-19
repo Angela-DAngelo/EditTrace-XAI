@@ -1,0 +1,9 @@
+{
+  "model_id": "torchvision:vit_b_16:IMAGENET1K_V1",
+  "seed": 20260801,
+  "development_candidate_pool": 5000,
+  "development_selected": 500,
+  "development_evaluated": 628,
+  "test_selected": 2000,
+  "test_evaluated": 2479
+}

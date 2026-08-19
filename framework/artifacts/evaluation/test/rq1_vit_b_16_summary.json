@@ -1,0 +1,266 @@
+{
+  "accepted_traces": 619,
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 20260802,
+  "config": "/home/dange/EditTrace/edittrace-xai_v0.3/configs/development.yaml",
+  "config_sha256": "43de78ab8234a8bbc2c9cdc2cd17d3ff3fce271363afcaca66fca3c30333cafa",
+  "errors": [],
+  "ig_steps": 32,
+  "include_ig": true,
+  "input": "/home/dange/EditTrace/edittrace-xai_v0.3/artifacts/traces/vit_b_16_B-Single_test_outcomes.jsonl",
+  "input_sha256": "336786d9d099da103e2da4a3c53fb28b2b58a15906b6c95e52f767b49ec55b75",
+  "model": "torchvision:vit_b_16:IMAGENET1K_V1",
+  "random_baseline_seed": 20260802,
+  "results": {
+    "methods": {
+      "adjacent_score_change": {
+        "mean_latency_ms": 281.1402129903069,
+        "mrr": {
+          "available": true,
+          "ci95_high": 0.9714593430263865,
+          "ci95_low": 0.9483037156704361,
+          "estimate": 0.9601507808292946,
+          "n_clusters": 619,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "top1": {
+          "available": true,
+          "ci95_high": 0.9483037156704361,
+          "ci95_low": 0.9079159935379645,
+          "estimate": 0.9289176090468497,
+          "n_clusters": 619,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "total_model_calls": 3295
+      },
+      "counterfactual_replay": {
+        "mean_latency_ms": 327.9286076655897,
+        "mrr": {
+          "available": true,
+          "ci95_high": 1.0,
+          "ci95_low": 1.0,
+          "estimate": 1.0,
+          "n_clusters": 619,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "top1": {
+          "available": true,
+          "ci95_high": 1.0,
+          "ci95_low": 1.0,
+          "estimate": 1.0,
+          "n_clusters": 619,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "total_model_calls": 3295
+      },
+      "edit_magnitude": {
+        "mean_latency_ms": 0.03363249596122778,
+        "mrr": {
+          "available": true,
+          "ci95_high": 0.685191168551427,
+          "ci95_low": 0.6374252827140549,
+          "estimate": 0.6612008616047388,
+          "n_clusters": 619,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "top1": {
+          "available": true,
+          "ci95_high": 0.4701130856219709,
+          "ci95_low": 0.3925686591276252,
+          "estimate": 0.43134087237479807,
+          "n_clusters": 619,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "total_model_calls": 0
+      },
+      "integrated_gradients_support": {
+        "mean_latency_ms": 4856.562152550889,
+        "mrr": {
+          "available": true,
+          "ci95_high": 0.5018039849219171,
+          "ci95_low": 0.45231488960689287,
+          "estimate": 0.47716747442110935,
+          "n_clusters": 619,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "top1": {
+          "available": true,
+          "ci95_high": 0.27948303715670436,
+          "ci95_low": 0.21163166397415187,
+          "estimate": 0.2455573505654281,
+          "n_clusters": 619,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "total_model_calls": 19808
+      },
+      "last_action": {
+        "mean_latency_ms": 0.0033958788368336026,
+        "mrr": {
+          "available": true,
+          "ci95_high": 0.5275713516424341,
+          "ci95_low": 0.48187870220786205,
+          "estimate": 0.5045234248788368,
+          "n_clusters": 619,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "top1": {
+          "available": true,
+          "ci95_high": 0.2649434571890145,
+          "ci95_low": 0.1987075928917609,
+          "estimate": 0.2310177705977383,
+          "n_clusters": 619,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "total_model_calls": 0
+      },
+      "random": {
+        "mean_latency_ms": 0.13361381744749595,
+        "mrr": {
+          "available": true,
+          "ci95_high": 0.549892972536349,
+          "ci95_low": 0.5015885837372106,
+          "estimate": 0.5255250403877222,
+          "n_clusters": 619,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "top1": {
+          "available": true,
+          "ci95_high": 0.3134087237479806,
+          "ci95_low": 0.24394184168012925,
+          "estimate": 0.2778675282714055,
+          "n_clusters": 619,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "total_model_calls": 0
+      }
+    },
+    "paired_differences": [
+      {
+        "available": true,
+        "baseline": "adjacent_score_change",
+        "ci95_high": 0.09208400646203554,
+        "ci95_low": 0.051696284329563816,
+        "estimate": 0.07108239095315025,
+        "method": "counterfactual_replay",
+        "n_clusters": 619,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      {
+        "available": true,
+        "baseline": "adjacent_score_change",
+        "ci95_high": 0.051696284329563816,
+        "ci95_low": 0.028540656973613358,
+        "estimate": 0.03984921917070544,
+        "method": "counterfactual_replay",
+        "n_clusters": 619,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      {
+        "available": true,
+        "baseline": "edit_magnitude",
+        "ci95_high": 0.6074313408723748,
+        "ci95_low": 0.529886914378029,
+        "estimate": 0.568659127625202,
+        "method": "counterfactual_replay",
+        "n_clusters": 619,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      {
+        "available": true,
+        "baseline": "edit_magnitude",
+        "ci95_high": 0.3625747172859451,
+        "ci95_low": 0.31480883144857297,
+        "estimate": 0.33879913839526116,
+        "method": "counterfactual_replay",
+        "n_clusters": 619,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      {
+        "available": true,
+        "baseline": "integrated_gradients_support",
+        "ci95_high": 0.7883683360258481,
+        "ci95_low": 0.7205169628432956,
+        "estimate": 0.7544426494345718,
+        "method": "counterfactual_replay",
+        "n_clusters": 619,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      {
+        "available": true,
+        "baseline": "integrated_gradients_support",
+        "ci95_high": 0.5476851103931072,
+        "ci95_low": 0.4981960150780829,
+        "estimate": 0.5228325255788908,
+        "method": "counterfactual_replay",
+        "n_clusters": 619,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      {
+        "available": true,
+        "baseline": "last_action",
+        "ci95_high": 0.8012924071082391,
+        "ci95_low": 0.7350565428109854,
+        "estimate": 0.7689822294022617,
+        "method": "counterfactual_replay",
+        "n_clusters": 619,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      {
+        "available": true,
+        "baseline": "last_action",
+        "ci95_high": 0.5181212977921379,
+        "ci95_low": 0.47242864835756604,
+        "estimate": 0.4954765751211632,
+        "method": "counterfactual_replay",
+        "n_clusters": 619,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      {
+        "available": true,
+        "baseline": "random",
+        "ci95_high": 0.7560581583198708,
+        "ci95_low": 0.6865912762520194,
+        "estimate": 0.7221324717285945,
+        "method": "counterfactual_replay",
+        "n_clusters": 619,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      {
+        "available": true,
+        "baseline": "random",
+        "ci95_high": 0.4984114162627894,
+        "ci95_low": 0.45010702746365105,
+        "estimate": 0.4744749596122779,
+        "method": "counterfactual_replay",
+        "n_clusters": 619,
+        "resamples": 10000,
+        "seed": 20260802
+      }
+    ]
+  },
+  "rq": "RQ1",
+  "schema_version": "1.0",
+  "scope": "evaluation",
+  "warmup_iterations": 10
+}

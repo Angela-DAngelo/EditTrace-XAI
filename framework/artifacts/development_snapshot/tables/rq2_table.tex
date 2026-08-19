@@ -1,0 +1,15 @@
+\begin{table}[t]
+\centering
+\caption{RQ2 development results. Replace development with held-out results for the paper.}
+\label{tab:rq2}
+\begin{tabular}{llll}
+\toprule
+Model & Method & Pair Top-1 (95\% CI) & Pair-only recovery (95\% CI) \\
+\midrule
+ResNet-50 & difference\_in\_differences & 0.385 [0.311, 0.460] & 0.677 [0.609, 0.752] \\
+ResNet-50 & independent\_action & 0.149 [0.099, 0.205] & 0.317 [0.248, 0.391] \\
+ViT-B/16 & difference\_in\_differences & 0.368 [0.292, 0.451] & 0.681 [0.604, 0.757] \\
+ViT-B/16 & independent\_action & 0.167 [0.104, 0.229] & 0.319 [0.243, 0.396] \\
+\bottomrule
+\end{tabular}
+\end{table}

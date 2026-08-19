@@ -1,0 +1,3 @@
+# Optional experimental adapters. Install versions compatible with the target CUDA/runtime.
+torch
+torchvision

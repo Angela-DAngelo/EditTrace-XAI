@@ -1,0 +1,8 @@
+RQ1 smoke check: PASSED
+Accepted traces: 5
+Replay errors: 0
+Integrated Gradients: completed
+Bootstrap resamples: 100
+Model: ResNet-50
+Device: CPU
+Status: execution validated; metrics are non-scientific smoke outputs.

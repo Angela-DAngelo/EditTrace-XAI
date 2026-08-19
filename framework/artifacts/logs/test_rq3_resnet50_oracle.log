@@ -1,0 +1,259 @@
+/home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages/torchvision/models/_utils.py:207: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages/torchvision/models/_utils.py:222: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=AlexNet_Weights.IMAGENET1K_V1`. You can also use `weights=AlexNet_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Setting up [LPIPS] perceptual loss: trunk [alex], v[0.1], spatial [off]
+Loading model from: /home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages/lpips/weights/v0.1/alex.pth
+{
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 20260802,
+  "config": "/home/dange/EditTrace/edittrace-xai_v0.3/configs/development.yaml",
+  "config_sha256": "43de78ab8234a8bbc2c9cdc2cd17d3ff3fce271363afcaca66fca3c30333cafa",
+  "errors": [],
+  "exhaustive_verification": true,
+  "input": "/home/dange/EditTrace/edittrace-xai_v0.3/artifacts/traces/resnet50_b_oracle_shifted50_test.jsonl",
+  "input_sha256": "6bbe41b4814cbfb19b02379519df2c05f7e45eec53b8eba9e7e520e5bc5de513",
+  "input_traces": 50,
+  "model": "torchvision:resnet50:IMAGENET1K_V2",
+  "oracle_limit": 50,
+  "perceptual_metric": "lpips",
+  "results": {
+    "constrained_repair": {
+      "action_count": {
+        "available": true,
+        "ci95_high": 1.2244897959183674,
+        "ci95_low": 1.0408163265306123,
+        "estimate": 1.1224489795918366,
+        "n_clusters": 49,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "mean_latency_ms": 4007.4056639,
+      "normalized_parameter_movement": {
+        "available": true,
+        "ci95_high": 1.2142857142857142,
+        "ci95_low": 1.030612244897959,
+        "estimate": 1.1122448979591837,
+        "n_clusters": 49,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "oracle_cost_regret": {
+        "available": true,
+        "ci95_high": 0.0,
+        "ci95_low": 0.0,
+        "estimate": 0.0,
+        "n_clusters": 49,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "perceptual_distance": {
+        "available": true,
+        "ci95_high": 0.4724569453577491,
+        "ci95_low": 0.3332683525618394,
+        "estimate": 0.4031096580438316,
+        "n_clusters": 49,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "ssim": {
+        "available": true,
+        "ci95_high": 0.7302086886259821,
+        "ci95_low": 0.6007243579748246,
+        "estimate": 0.6670726580026345,
+        "n_clusters": 49,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "success": {
+        "available": true,
+        "ci95_high": 1.0,
+        "ci95_low": 0.94,
+        "estimate": 0.98,
+        "n_clusters": 50,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "total_model_calls": 5247
+    },
+    "exhaustive_oracle": {
+      "action_count": {
+        "available": true,
+        "ci95_high": 1.2244897959183674,
+        "ci95_low": 1.0408163265306123,
+        "estimate": 1.1224489795918366,
+        "n_clusters": 49,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "mean_latency_ms": 4007.4056639,
+      "normalized_parameter_movement": {
+        "available": true,
+        "ci95_high": 1.2142857142857142,
+        "ci95_low": 1.030612244897959,
+        "estimate": 1.1122448979591837,
+        "n_clusters": 49,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "oracle_cost_regret": {
+        "available": true,
+        "ci95_high": 0.0,
+        "ci95_low": 0.0,
+        "estimate": 0.0,
+        "n_clusters": 49,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "perceptual_distance": {
+        "available": true,
+        "ci95_high": 0.4724569453577491,
+        "ci95_low": 0.3332683525618394,
+        "estimate": 0.4031096580438316,
+        "n_clusters": 49,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "ssim": {
+        "available": true,
+        "ci95_high": 0.7302086886259821,
+        "ci95_low": 0.6007243579748246,
+        "estimate": 0.6670726580026345,
+        "n_clusters": 49,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "success": {
+        "available": true,
+        "ci95_high": 1.0,
+        "ci95_low": 0.94,
+        "estimate": 0.98,
+        "n_clusters": 50,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "total_model_calls": 5247
+    },
+    "last_action_rollback": {
+      "action_count": {
+        "available": true,
+        "ci95_high": 1.0,
+        "ci95_low": 1.0,
+        "estimate": 1.0,
+        "n_clusters": 50,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "mean_latency_ms": 35.439798659999994,
+      "normalized_parameter_movement": {
+        "available": true,
+        "ci95_high": 1.0,
+        "ci95_low": 1.0,
+        "estimate": 1.0,
+        "n_clusters": 50,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "oracle_cost_regret": {
+        "available": true,
+        "ci95_high": 0.21346340631134808,
+        "ci95_low": 0.007251807621547154,
+        "estimate": 0.09450285752037806,
+        "n_clusters": 14,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "perceptual_distance": {
+        "available": true,
+        "ci95_high": 0.5701855906285346,
+        "ci95_low": 0.2765803383530251,
+        "estimate": 0.42822123292301384,
+        "n_clusters": 14,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "ssim": {
+        "available": true,
+        "ci95_high": 0.77379700431151,
+        "ci95_low": 0.518058973833783,
+        "estimate": 0.6452362966590451,
+        "n_clusters": 14,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "success": {
+        "available": true,
+        "ci95_high": 0.4,
+        "ci95_low": 0.16,
+        "estimate": 0.28,
+        "n_clusters": 50,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "total_model_calls": 50
+    },
+    "max_magnitude_rollback": {
+      "action_count": {
+        "available": true,
+        "ci95_high": 1.0,
+        "ci95_low": 1.0,
+        "estimate": 1.0,
+        "n_clusters": 50,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "mean_latency_ms": 35.683495480000005,
+      "normalized_parameter_movement": {
+        "available": true,
+        "ci95_high": 1.0,
+        "ci95_low": 1.0,
+        "estimate": 1.0,
+        "n_clusters": 50,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "oracle_cost_regret": {
+        "available": true,
+        "ci95_high": 0.036832160549238324,
+        "ci95_low": 0.0,
+        "estimate": 0.015307331757087792,
+        "n_clusters": 14,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "perceptual_distance": {
+        "available": true,
+        "ci95_high": 0.5290910604942057,
+        "ci95_low": 0.2703948607801327,
+        "estimate": 0.3980957402714661,
+        "n_clusters": 14,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "ssim": {
+        "available": true,
+        "ci95_high": 0.7713261220863421,
+        "ci95_low": 0.5370995110249167,
+        "estimate": 0.6606819616832519,
+        "n_clusters": 14,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "success": {
+        "available": true,
+        "ci95_high": 0.4,
+        "ci95_low": 0.16,
+        "estimate": 0.28,
+        "n_clusters": 50,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "total_model_calls": 50
+    }
+  },
+  "rq": "RQ3",
+  "schema_version": "1.0",
+  "scope": "evaluation",
+  "shifted_traces_evaluated": 50,
+  "warmup_iterations": 10
+}

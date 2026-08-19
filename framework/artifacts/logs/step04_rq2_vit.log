@@ -1,0 +1,132 @@
+{
+  "accepted_traces": 144,
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 20260802,
+  "errors": [],
+  "input": "/home/dange/EditTrace/edittrace-xai_v0.3/artifacts/traces/vit_b_16_B-Interaction_dev_outcomes.jsonl",
+  "input_sha256": "d1dd58c42617b8c16859890789e00b859d508fb42663328118f1a177fed615f5",
+  "model": "torchvision:vit_b_16:IMAGENET1K_V1",
+  "results": {
+    "methods": {
+      "difference_in_differences": {
+        "average_precision": {
+          "available": true,
+          "ci95_high": 0.6233789151627693,
+          "ci95_low": 0.5089196856384357,
+          "estimate": 0.5662692438734105,
+          "n_clusters": 144,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "mean_latency_ms": 971.4028728194444,
+        "reciprocal_rank": {
+          "available": true,
+          "ci95_high": 0.6233789151627693,
+          "ci95_low": 0.5089196856384357,
+          "estimate": 0.5662692438734105,
+          "n_clusters": 144,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "selected_pair_only_recovery": {
+          "available": true,
+          "ci95_high": 0.7569444444444444,
+          "ci95_low": 0.6041666666666666,
+          "estimate": 0.6805555555555556,
+          "n_clusters": 144,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "top1": {
+          "available": true,
+          "ci95_high": 0.4513888888888889,
+          "ci95_low": 0.2916666666666667,
+          "estimate": 0.3680555555555556,
+          "n_clusters": 144,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "total_model_calls": 2259
+      },
+      "independent_action": {
+        "average_precision": {
+          "available": true,
+          "ci95_high": 0.3928590656064614,
+          "ci95_low": 0.2879169297138047,
+          "estimate": 0.3388655904280904,
+          "n_clusters": 144,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "mean_latency_ms": 0.0,
+        "reciprocal_rank": {
+          "available": true,
+          "ci95_high": 0.3928590656064614,
+          "ci95_low": 0.2879169297138047,
+          "estimate": 0.3388655904280904,
+          "n_clusters": 144,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "selected_pair_only_recovery": {
+          "available": true,
+          "ci95_high": 0.3958333333333333,
+          "ci95_low": 0.24305555555555555,
+          "estimate": 0.3194444444444444,
+          "n_clusters": 144,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "top1": {
+          "available": true,
+          "ci95_high": 0.22916666666666666,
+          "ci95_low": 0.10416666666666667,
+          "estimate": 0.16666666666666666,
+          "n_clusters": 144,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "total_model_calls": 0
+      }
+    },
+    "paired_differences": [
+      {
+        "available": true,
+        "baseline": "independent_action",
+        "ci95_high": 0.2916666666666667,
+        "ci95_low": 0.1111111111111111,
+        "estimate": 0.2013888888888889,
+        "method": "difference_in_differences",
+        "n_clusters": 144,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      {
+        "available": true,
+        "baseline": "independent_action",
+        "ci95_high": 0.2973336597815765,
+        "ci95_low": 0.15705924958529127,
+        "estimate": 0.22740365344532007,
+        "method": "difference_in_differences",
+        "n_clusters": 144,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      {
+        "available": true,
+        "baseline": "independent_action",
+        "ci95_high": 0.4583333333333333,
+        "ci95_low": 0.2638888888888889,
+        "estimate": 0.3611111111111111,
+        "method": "difference_in_differences",
+        "n_clusters": 144,
+        "resamples": 10000,
+        "seed": 20260802
+      }
+    ]
+  },
+  "rq": "RQ2",
+  "schema_version": "1.0",
+  "scope": "development",
+  "warmup_iterations": 10
+}

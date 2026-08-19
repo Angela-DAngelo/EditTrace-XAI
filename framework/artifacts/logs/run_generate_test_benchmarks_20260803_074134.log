@@ -1,0 +1,11 @@
+==========================================================
+ EditTrace-XAI - TEST BENCHMARK GENERATION
+ Started: Mon Aug  3 07:41:34 AM UTC 2026
+==========================================================
+usage: edittrace generate-controlled [-h] --manifest MANIFEST --config CONFIG
+                                     --benchmark {B-Single,B-Interaction}
+                                     --model {resnet50,vit_b_16}
+                                     [--weights WEIGHTS] [--device DEVICE]
+                                     [--split {development,test}]
+                                     [--count COUNT] --output OUTPUT
+edittrace generate-controlled: error: the following arguments are required: --manifest, --config, --benchmark, --model, --output

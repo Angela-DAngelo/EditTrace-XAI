@@ -1,0 +1,180 @@
+{
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 20260802,
+  "config": "/home/dange/EditTrace/edittrace-xai_v0.3/configs/development.yaml",
+  "config_sha256": "43de78ab8234a8bbc2c9cdc2cd17d3ff3fce271363afcaca66fca3c30333cafa",
+  "errors": [],
+  "exhaustive_verification": false,
+  "input": "/home/dange/EditTrace/edittrace-xai_v0.3/artifacts/traces/vit_b_16_b_natural_test.jsonl",
+  "input_sha256": "0eb410bea4cfe9004a9e0130b7af2bd7cf4c0502e74bf2d744436fd324aa6999",
+  "input_traces": 2000,
+  "model": "torchvision:vit_b_16:IMAGENET1K_V1",
+  "oracle_limit": null,
+  "perceptual_metric": "lpips",
+  "results": {
+    "constrained_repair": {
+      "action_count": {
+        "available": true,
+        "ci95_high": 1.1023622047244095,
+        "ci95_low": 1.0433070866141732,
+        "estimate": 1.0708661417322836,
+        "n_clusters": 254,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "mean_latency_ms": 1877.0788202105261,
+      "normalized_parameter_movement": {
+        "available": true,
+        "ci95_high": 1.0586614173228348,
+        "ci95_low": 0.9791338582677165,
+        "estimate": 1.0179133858267715,
+        "n_clusters": 254,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "oracle_cost_regret": {
+        "available": false,
+        "n_clusters": 0
+      },
+      "perceptual_distance": {
+        "available": true,
+        "ci95_high": 0.3866574224522433,
+        "ci95_low": 0.3234253098477227,
+        "estimate": 0.35505378127165,
+        "n_clusters": 254,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "ssim": {
+        "available": true,
+        "ci95_high": 0.7012322823685406,
+        "ci95_low": 0.6347924215063163,
+        "estimate": 0.6683514900991068,
+        "n_clusters": 254,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "success": {
+        "available": true,
+        "ci95_high": 0.9774436090225563,
+        "ci95_low": 0.9285714285714286,
+        "estimate": 0.9548872180451128,
+        "n_clusters": 266,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "total_model_calls": 6842
+    },
+    "last_action_rollback": {
+      "action_count": {
+        "available": true,
+        "ci95_high": 1.0,
+        "ci95_low": 1.0,
+        "estimate": 1.0,
+        "n_clusters": 266,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "mean_latency_ms": 68.4651502406015,
+      "normalized_parameter_movement": {
+        "available": true,
+        "ci95_high": 1.0,
+        "ci95_low": 1.0,
+        "estimate": 1.0,
+        "n_clusters": 266,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "oracle_cost_regret": {
+        "available": false,
+        "n_clusters": 0
+      },
+      "perceptual_distance": {
+        "available": true,
+        "ci95_high": 0.44010084724802334,
+        "ci95_low": 0.3302371901330314,
+        "estimate": 0.3849622328895368,
+        "n_clusters": 79,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "ssim": {
+        "available": true,
+        "ci95_high": 0.7231412819010353,
+        "ci95_low": 0.610877419429649,
+        "estimate": 0.6675540230229935,
+        "n_clusters": 79,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "success": {
+        "available": true,
+        "ci95_high": 0.3533834586466165,
+        "ci95_low": 0.24060150375939848,
+        "estimate": 0.29699248120300753,
+        "n_clusters": 266,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "total_model_calls": 266
+    },
+    "max_magnitude_rollback": {
+      "action_count": {
+        "available": true,
+        "ci95_high": 1.0,
+        "ci95_low": 1.0,
+        "estimate": 1.0,
+        "n_clusters": 266,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "mean_latency_ms": 68.32855957142857,
+      "normalized_parameter_movement": {
+        "available": true,
+        "ci95_high": 1.0,
+        "ci95_low": 1.0,
+        "estimate": 1.0,
+        "n_clusters": 266,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "oracle_cost_regret": {
+        "available": false,
+        "n_clusters": 0
+      },
+      "perceptual_distance": {
+        "available": true,
+        "ci95_high": 0.48546758111696076,
+        "ci95_low": 0.39890004378690036,
+        "estimate": 0.4424181773563939,
+        "n_clusters": 122,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "ssim": {
+        "available": true,
+        "ci95_high": 0.6573660104177301,
+        "ci95_low": 0.5665435476271372,
+        "estimate": 0.6126851636357593,
+        "n_clusters": 122,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "success": {
+        "available": true,
+        "ci95_high": 0.518796992481203,
+        "ci95_low": 0.39849624060150374,
+        "estimate": 0.45864661654135336,
+        "n_clusters": 266,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      "total_model_calls": 266
+    }
+  },
+  "rq": "RQ3",
+  "schema_version": "1.0",
+  "scope": "evaluation",
+  "shifted_traces_evaluated": 266,
+  "warmup_iterations": 10
+}

@@ -1,0 +1,5 @@
+==========================================================
+ EditTrace-XAI - TEST BENCHMARK GENERATION
+ Started: Mon Aug  3 07:38:02 AM UTC 2026
+==========================================================
+./run_generate_test_benchmarks.sh: line 34: $1: unbound variable

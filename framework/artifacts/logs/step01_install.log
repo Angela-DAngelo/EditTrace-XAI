@@ -1,0 +1,66 @@
+Obtaining file:///home/dange/EditTrace/edittrace-xai_v0.3
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: numpy<3,>=2.0 in /home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages (from edittrace-xai==0.3.0) (2.4.6)
+Requirement already satisfied: Pillow<13,>=11 in /home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages (from edittrace-xai==0.3.0) (12.3.0)
+Requirement already satisfied: pydantic<3,>=2.10 in /home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages (from edittrace-xai==0.3.0) (2.13.4)
+Requirement already satisfied: PyYAML<7,>=6 in /home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages (from edittrace-xai==0.3.0) (6.0.3)
+Requirement already satisfied: torch>=2.4 in /home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages (from edittrace-xai==0.3.0) (2.13.0)
+Requirement already satisfied: torchvision>=0.19 in /home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages (from edittrace-xai==0.3.0) (0.28.0)
+Requirement already satisfied: lpips<1,>=0.1.4 in /home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages (from edittrace-xai==0.3.0) (0.1.4)
+Requirement already satisfied: scikit-image<1,>=0.24 in /home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages (from edittrace-xai==0.3.0) (0.26.0)
+Requirement already satisfied: scipy>=1.0.1 in /home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages (from lpips<1,>=0.1.4->edittrace-xai==0.3.0) (1.17.1)
+Requirement already satisfied: tqdm>=4.28.1 in /home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages (from lpips<1,>=0.1.4->edittrace-xai==0.3.0) (4.70.0)
+Requirement already satisfied: annotated-types>=0.6.0 in /home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages (from pydantic<3,>=2.10->edittrace-xai==0.3.0) (0.8.0)
+Requirement already satisfied: pydantic-core==2.46.4 in /home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages (from pydantic<3,>=2.10->edittrace-xai==0.3.0) (2.46.4)
+Requirement already satisfied: typing-extensions>=4.14.1 in /home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages (from pydantic<3,>=2.10->edittrace-xai==0.3.0) (4.16.0)
+Requirement already satisfied: typing-inspection>=0.4.2 in /home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages (from pydantic<3,>=2.10->edittrace-xai==0.3.0) (0.4.2)
+Requirement already satisfied: networkx>=3.0 in /home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages (from scikit-image<1,>=0.24->edittrace-xai==0.3.0) (3.6.1)
+Requirement already satisfied: imageio!=2.35.0,>=2.33 in /home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages (from scikit-image<1,>=0.24->edittrace-xai==0.3.0) (2.37.4)
+Requirement already satisfied: tifffile>=2022.8.12 in /home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages (from scikit-image<1,>=0.24->edittrace-xai==0.3.0) (2026.3.3)
+Requirement already satisfied: packaging>=21 in /home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages (from scikit-image<1,>=0.24->edittrace-xai==0.3.0) (26.2)
+Requirement already satisfied: lazy-loader>=0.4 in /home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages (from scikit-image<1,>=0.24->edittrace-xai==0.3.0) (0.5)
+Requirement already satisfied: filelock in /home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages (from torch>=2.4->edittrace-xai==0.3.0) (3.32.2)
+Requirement already satisfied: setuptools>=77.0.3 in /home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages (from torch>=2.4->edittrace-xai==0.3.0) (83.0.0)
+Requirement already satisfied: sympy>=1.13.3 in /home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages (from torch>=2.4->edittrace-xai==0.3.0) (1.14.0)
+Requirement already satisfied: jinja2 in /home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages (from torch>=2.4->edittrace-xai==0.3.0) (3.1.6)
+Requirement already satisfied: fsspec>=0.8.5 in /home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages (from torch>=2.4->edittrace-xai==0.3.0) (2026.7.0)
+Requirement already satisfied: cuda-toolkit==13.0.3 in /home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.3; platform_system == "Linux"->torch>=2.4->edittrace-xai==0.3.0) (13.0.3.0)
+Requirement already satisfied: cuda-bindings<14,>=13.0.3 in /home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages (from torch>=2.4->edittrace-xai==0.3.0) (13.3.1)
+Requirement already satisfied: nvidia-cudnn-cu13==9.20.0.48 in /home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages (from torch>=2.4->edittrace-xai==0.3.0) (9.20.0.48)
+Requirement already satisfied: nvidia-cusparselt-cu13==0.8.1 in /home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages (from torch>=2.4->edittrace-xai==0.3.0) (0.8.1)
+Requirement already satisfied: nvidia-nccl-cu13==2.29.7 in /home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages (from torch>=2.4->edittrace-xai==0.3.0) (2.29.7)
+Requirement already satisfied: nvidia-nvshmem-cu13==3.4.5 in /home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages (from torch>=2.4->edittrace-xai==0.3.0) (3.4.5)
+Requirement already satisfied: triton==3.7.1 in /home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages (from torch>=2.4->edittrace-xai==0.3.0) (3.7.1)
+Requirement already satisfied: nvidia-cublas==13.1.1.3.* in /home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.3; platform_system == "Linux"->torch>=2.4->edittrace-xai==0.3.0) (13.1.1.3)
+Requirement already satisfied: nvidia-cuda-nvrtc==13.0.88.* in /home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.3; platform_system == "Linux"->torch>=2.4->edittrace-xai==0.3.0) (13.0.88)
+Requirement already satisfied: nvidia-cuda-runtime==13.0.96.* in /home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.3; platform_system == "Linux"->torch>=2.4->edittrace-xai==0.3.0) (13.0.96)
+Requirement already satisfied: nvidia-cufft==12.0.0.61.* in /home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.3; platform_system == "Linux"->torch>=2.4->edittrace-xai==0.3.0) (12.0.0.61)
+Requirement already satisfied: nvidia-nvjitlink<14,>=13.0.88 in /home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.3; platform_system == "Linux"->torch>=2.4->edittrace-xai==0.3.0) (13.3.33)
+Requirement already satisfied: nvidia-cufile==1.15.1.6.* in /home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.3; platform_system == "Linux"->torch>=2.4->edittrace-xai==0.3.0) (1.15.1.6)
+Requirement already satisfied: nvidia-cuda-cupti==13.0.85.* in /home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.3; platform_system == "Linux"->torch>=2.4->edittrace-xai==0.3.0) (13.0.85)
+Requirement already satisfied: nvidia-curand==10.4.0.35.* in /home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.3; platform_system == "Linux"->torch>=2.4->edittrace-xai==0.3.0) (10.4.0.35)
+Requirement already satisfied: nvidia-cusolver==12.0.4.66.* in /home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.3; platform_system == "Linux"->torch>=2.4->edittrace-xai==0.3.0) (12.0.4.66)
+Requirement already satisfied: nvidia-cusparse==12.6.3.3.* in /home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.3; platform_system == "Linux"->torch>=2.4->edittrace-xai==0.3.0) (12.6.3.3)
+Requirement already satisfied: nvidia-nvtx==13.0.85.* in /home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.3; platform_system == "Linux"->torch>=2.4->edittrace-xai==0.3.0) (13.0.85)
+Requirement already satisfied: cuda-pathfinder>=1.4.2 in /home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages (from cuda-bindings<14,>=13.0.3->torch>=2.4->edittrace-xai==0.3.0) (1.6.0)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in /home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages (from sympy>=1.13.3->torch>=2.4->edittrace-xai==0.3.0) (1.3.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /home/dange/EditTrace/edittrace-xai_v0.2/.venv/lib/python3.11/site-packages (from jinja2->torch>=2.4->edittrace-xai==0.3.0) (3.0.3)
+Building wheels for collected packages: edittrace-xai
+  Building editable for edittrace-xai (pyproject.toml): started
+  Building editable for edittrace-xai (pyproject.toml): finished with status 'done'
+  Created wheel for edittrace-xai: filename=edittrace_xai-0.3.0-0.editable-py3-none-any.whl size=1727 sha256=269927ff936963790706c8de74c231209f2d3ca221742283f11b7d834f04a220
+  Stored in directory: /tmp/pip-ephem-wheel-cache-2852gu8i/wheels/5a/fa/f5/8c3f4ed2efe6d954ef19fc40737c212d517ef2b84a65bea41f
+Successfully built edittrace-xai
+Installing collected packages: edittrace-xai
+  Attempting uninstall: edittrace-xai
+    Found existing installation: edittrace-xai 0.3.0
+    Uninstalling edittrace-xai-0.3.0:
+      Successfully uninstalled edittrace-xai-0.3.0
+Successfully installed edittrace-xai-0.3.0

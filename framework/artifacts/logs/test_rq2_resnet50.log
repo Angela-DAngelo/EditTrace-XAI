@@ -1,0 +1,132 @@
+{
+  "accepted_traces": 640,
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 20260802,
+  "errors": [],
+  "input": "/home/dange/EditTrace/edittrace-xai_v0.3/artifacts/traces/resnet50_B-Interaction_test_outcomes.jsonl",
+  "input_sha256": "ea0167aff9944073657643ba5d56ad62ce042c0f1200bb3059da5916f6d0c1a2",
+  "model": "torchvision:resnet50:IMAGENET1K_V2",
+  "results": {
+    "methods": {
+      "difference_in_differences": {
+        "average_precision": {
+          "available": true,
+          "ci95_high": 0.6064192304006757,
+          "ci95_low": 0.5504318904836483,
+          "estimate": 0.5783546574952825,
+          "n_clusters": 640,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "mean_latency_ms": 543.1466232375,
+        "reciprocal_rank": {
+          "available": true,
+          "ci95_high": 0.6064192304006757,
+          "ci95_low": 0.5504318904836483,
+          "estimate": 0.5783546574952825,
+          "n_clusters": 640,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "selected_pair_only_recovery": {
+          "available": true,
+          "ci95_high": 0.6703125,
+          "ci95_low": 0.5953125,
+          "estimate": 0.6328125,
+          "n_clusters": 640,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "top1": {
+          "available": true,
+          "ci95_high": 0.43125,
+          "ci95_low": 0.3546875,
+          "estimate": 0.3921875,
+          "n_clusters": 640,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "total_model_calls": 10109
+      },
+      "independent_action": {
+        "average_precision": {
+          "available": true,
+          "ci95_high": 0.3502790444147866,
+          "ci95_low": 0.3025948632530664,
+          "estimate": 0.3261180269383394,
+          "n_clusters": 640,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "mean_latency_ms": 0.0,
+        "reciprocal_rank": {
+          "available": true,
+          "ci95_high": 0.3502790444147866,
+          "ci95_low": 0.3025948632530664,
+          "estimate": 0.3261180269383394,
+          "n_clusters": 640,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "selected_pair_only_recovery": {
+          "available": true,
+          "ci95_high": 0.3078125,
+          "ci95_low": 0.2375,
+          "estimate": 0.271875,
+          "n_clusters": 640,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "top1": {
+          "available": true,
+          "ci95_high": 0.175,
+          "ci95_low": 0.1203125,
+          "estimate": 0.146875,
+          "n_clusters": 640,
+          "resamples": 10000,
+          "seed": 20260802
+        },
+        "total_model_calls": 0
+      }
+    },
+    "paired_differences": [
+      {
+        "available": true,
+        "baseline": "independent_action",
+        "ci95_high": 0.2922265624999994,
+        "ci95_low": 0.1984375,
+        "estimate": 0.2453125,
+        "method": "difference_in_differences",
+        "n_clusters": 640,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      {
+        "available": true,
+        "baseline": "independent_action",
+        "ci95_high": 0.28790261301198805,
+        "ci95_low": 0.21612945973297534,
+        "estimate": 0.25223663055694306,
+        "method": "difference_in_differences",
+        "n_clusters": 640,
+        "resamples": 10000,
+        "seed": 20260802
+      },
+      {
+        "available": true,
+        "baseline": "independent_action",
+        "ci95_high": 0.4046875,
+        "ci95_low": 0.315625,
+        "estimate": 0.3609375,
+        "method": "difference_in_differences",
+        "n_clusters": 640,
+        "resamples": 10000,
+        "seed": 20260802
+      }
+    ]
+  },
+  "rq": "RQ2",
+  "schema_version": "1.0",
+  "scope": "evaluation",
+  "warmup_iterations": 10
+}
